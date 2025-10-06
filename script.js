@@ -696,6 +696,9 @@
                 return; 
             }
             
+            // On s'assure que la barre de navigation principale reste bien masquée
+            nav.style.display = 'none';
+            
             // Mettre à jour le fil d'Ariane
             document.getElementById('breadcrumbCategoryLink').textContent = categories[currentCategory].name;
             document.getElementById('breadcrumbAnimal').textContent = currentAnimal.nom_commun;
@@ -703,10 +706,10 @@
             const a = currentAnimal;
             const statusInfo = iucnStatusMap[a.conservation?.statut_iucn] || iucnStatusMap['NE'];
             
-            nav.style.display = 'none';
-            
+            // On filtre les images pour ne garder que celles qui sont valides
             const validImages = a.images ? a.images.filter(img => (img.url && img.url !== "undefined") || img.data) : [];
 
+            // Définition des sous-fonctions pour générer les sections HTML
             const statsGridHTML = (mensurations) => {
                 if (!mensurations) return '';
                 let html = '';
@@ -777,44 +780,45 @@
                         </div>
                     </section>`;
             };
-
-            // --- DEBUT DE LA CORRECTION ---
+            
             const taxonomieHTML = (taxonomie) => {
                 if (!taxonomie) return '';
-
                 const formattedEntries = Object.entries(taxonomie).map(([key, value]) => {
                     let label = key.charAt(0).toUpperCase() + key.slice(1);
                     if (key === 'regne') {
-                        label = 'Règne'; // Correction spécifique pour l'accent
+                        label = 'Règne';
                     }
                     return `<div class="taxonomy-item"><div class="taxonomy-label">${label}</div><div class="taxonomy-value">${value}</div></div>`;
                 }).join('');
-
                 const etymologieHTML = a.etymologie ? `<h3>Étymologie</h3><p><b>${a.taxonomie.genre}:</b> ${a.etymologie.genre.origine} - "${a.etymologie.genre.signification}"</p><p><b>${a.nom_scientifique.split(' ')[1]}:</b> ${a.etymologie.espece.origine} - "${a.etymologie.espece.signification}"</p>` : '';
-
                 return `<section id="taxonomie" class="container"><div class="glass-card"><h2>Classification Taxonomique</h2><div class="taxonomy-grid">${formattedEntries}</div>${etymologieHTML}</div></section>`;
             };
-            // --- FIN DE LA CORRECTION ---
 
+            // Construction finale du HTML pour le #content
             content.innerHTML = `
                 <header id="accueil"><h1>${a.nom_commun}</h1><p class="subtitle">${a.nom_scientifique}</p></header>
                 
+                ${validImages.length > 0 ? `
                 <section id="galerie" class="container">
                     <div class="glass-card">
                         <h2>Galerie Photographique</h2>
-                        ${validImages.length > 0 ? `
-                            <div class="carousel-container">
-                                <div class="carousel-wrapper" id="carouselWrapper">
-                                    ${validImages.map(img => `<div class="carousel-slide"><img src="${img.url || img.data}" alt="Photo de ${a.nom_commun}" loading="lazy"></div>`).join('')}
-                                </div>
-                                ${validImages.length > 1 ? `<button class="carousel-btn prev" onclick="moveCarousel(-1)">❮</button><button class="carousel-btn next" onclick="moveCarousel(1)">❯</button>` : ''}
+                        <div class="carousel-container">
+                            <div class="carousel-wrapper" id="carouselWrapper">
+                                ${validImages.map(img => `<div class="carousel-slide"><img src="${img.url || img.data}" alt="Photo de ${a.nom_commun}" loading="lazy"></div>`).join('')}
                             </div>
-                            ${validImages.length > 1 ? `<div class="carousel-indicators">${validImages.map((_, i) => `<span class="indicator" onclick="goToSlide(${i})"></span>`).join('')}</div>` : ''}
-                        ` : `
-                            <p class="no-images-message">Aucune image n'est actuellement disponible pour cet animal.</p>
-                        `}
+                            ${validImages.length > 1 ? `<button class="carousel-btn prev" onclick="moveCarousel(-1)">❮</button><button class="carousel-btn next" onclick="moveCarousel(1)">❯</button>` : ''}
+                        </div>
+                        ${validImages.length > 1 ? `<div class="carousel-indicators">${validImages.map((_, i) => `<span class="indicator" onclick="goToSlide(${i})"></span>`).join('')}</div>` : ''}
                     </div>
                 </section>
+                ` : `
+                <section id="galerie" class="container">
+                    <div class="glass-card">
+                        <h2>Galerie Photographique</h2>
+                        <p class="no-images-message">Aucune image n'est actuellement disponible pour cet animal.</p>
+                    </div>
+                </section>
+                `}
                 
                 ${taxonomieHTML(a.taxonomie)}
                 
@@ -1189,4 +1193,5 @@
             // --- FIN DU BLOC ---
 
             updateScrollProgressBar();
+
         });
