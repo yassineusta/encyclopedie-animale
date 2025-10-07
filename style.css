@@ -142,6 +142,10 @@
     position: relative;
     top: -1px; /* Ajuste la position verticale de la flèche */
 }
+/* AJOUTEZ CECI POUR RAPPROCHER LES BOUTONS DE NAVIGATION */
+#scrollToTopBtn {
+    margin-bottom: -10px; /* Valeur négative pour le "coller" au groupe du dessous. Ajustez si besoin. */
+}
 
 /* Ajoutez cette nouvelle règle */
 .animal-nav-horizontal-group {
@@ -349,11 +353,17 @@
 
         /* Dashboard Catégorie */
         #category-dashboard {
-            display: none;
-            min-height: 100vh;
-            padding: 100px 20px 40px;
-        }
-        #category-dashboard.visible { display: block; }
+    display: none;
+    min-height: 100vh;
+    padding: 100px 20px 40px;
+    opacity: 0; /* On le rend invisible par défaut */
+    transition: opacity 0.3s ease-out; /* On ajoute une transition douce sur l'opacité */
+}
+
+#category-dashboard.visible {
+    display: block; /* On le fait apparaître dans le flux de la page */
+    opacity: 1; /* On le rend visible, ce qui déclenche la transition */
+}
         .dashboard-header {
             text-align: center;
             margin-bottom: 40px;
@@ -1395,6 +1405,9 @@
     #content h4 {
         font-size: 1.1rem;
     }
+	.stat-number {
+    font-size: 1.6rem; /* La taille par défaut est 2.5rem. Vous pouvez ajuster cette valeur. */
+}
     /* Titres de l'écran Catégorie */
     .dashboard-header h1 {
         font-size: 1.8rem;
@@ -1453,11 +1466,5 @@
     .nav-animal-btn {
         width: 30px;
         height: 30px;
-    }
-	.no-images-message {
-    text-align: center;
-    padding: 40px 20px;
-    color: var(--text-light);
-    font-style: italic;
     }
 }
