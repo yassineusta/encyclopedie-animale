@@ -5,6 +5,35 @@
         let showAllAnimals = false;
 		let iucnPieChartInstance = null;
 
+        // Dictionnaire pour traduire les clés JSON en titres affichables
+const titresTraduits = {
+    // Section Alimentation
+    regime: "Régime",
+    familles_preferees: "Familles préférées",
+    complement: "Complément",
+    role_ecologique: "Rôle écologique",
+
+    // Section Comportement
+    social: "Social",
+    habitat_vertical: "Habitat vertical",
+    locomotion: "Locomotion",
+
+    // Section Vocalisations
+    // La clé "description" est utilisée ailleurs, on la laisse telle quelle.
+    description: "Description",
+    portee: "Portée",
+    frequence: "Fréquence",
+    amplification: "Amplification",
+
+    // Section Reproduction
+    systeme: "Système",
+    parade: "Parade",
+    nidification: "Nidification",
+    ponte: "Ponte",
+    incubation: "Incubation",
+    soins: "Soins"
+};
+
         const idb = {
             db: null,
             init: async function(dbName, storeName) {
@@ -290,32 +319,35 @@
         }
 
         function showCategoryDashboard(categoryKey) {
-            currentCategory = categoryKey;
-            showAllAnimals = false;
-            document.getElementById('category-selection-screen').classList.add('hidden');
-            document.getElementById('category-dashboard').classList.add('visible');
-            document.getElementById('animal-detail-view').classList.remove('visible');
-            document.getElementById('fab-container-home').style.display = 'none';
-            document.getElementById('animalNavigation').classList.remove('visible');
-            document.getElementById('globalSearch').classList.remove('visible');
+			 const dashboard = document.getElementById('category-dashboard');
 
-            document.documentElement.style.setProperty('--accent-color', categories[categoryKey].color);
-            
-            document.getElementById('dashboardCategoryTitle').textContent = categories[categoryKey].name;
-            document.getElementById('dashboardCategorySubtitle').textContent = `Découvrez tous les ${categories[categoryKey].name.toLowerCase()} de notre encyclopédie`;
-            document.getElementById('breadcrumbCategory').textContent = categories[categoryKey].name;
-            
-            // On utilise notre nouvelle fonction pour mettre à jour le titre du bouton
-            const singularName = getSingularCategoryName(currentCategory);
-            const newTitle = `Ajouter un ${singularName}`;
-            document.getElementById('add-animal-btn-top').setAttribute('title', newTitle);
-            
-            populateFilters();
-            resetFilters();
-            loadDashboardAnimals();
-            loadDashboardStats();
-            loadDashboardCharts();
-			document.getElementById('progressBar').classList.remove('active');
+    // 1. On s'assure que tout est bien caché (surtout le dashboard)
+    document.getElementById('category-selection-screen').classList.add('hidden');
+    dashboard.classList.remove('visible');
+    document.getElementById('animal-detail-view').classList.remove('visible');
+
+    // 2. ON REMONTE EN HAUT PENDANT QUE LE DASHBOARD EST INVISIBLE
+    window.scrollTo(0, 0);
+
+    // 3. On prépare toutes les données
+    currentCategory = categoryKey;
+    showAllAnimals = false;
+    document.documentElement.style.setProperty('--accent-color', categories[categoryKey].color);
+    // ... (toutes les lignes qui préparent le contenu)
+    document.getElementById('dashboardCategoryTitle').textContent = categories[categoryKey].name;
+    document.getElementById('dashboardCategorySubtitle').textContent = `Découvrez tous les ${categories[categoryKey].name.toLowerCase()} de notre encyclopédie`;
+    // ... etc.
+    populateFilters();
+    resetFilters();
+    loadDashboardAnimals();
+    loadDashboardStats();
+    loadDashboardCharts();
+    document.getElementById('progressBar').classList.remove('active');
+
+    // 4. SEULEMENT MAINTENANT, on rend le dashboard visible
+    requestAnimationFrame(() => {
+    dashboard.classList.add('visible');
+});
         }
 		
         function getSingularCategoryName(categoryKey) {
@@ -559,11 +591,9 @@
                 
                 return `
                     <div class="animal-card" onclick="showAnimalDetailScreen('${currentCategory}', '${animal.id}')">
-                        ${imageUrl ? `
-                            <div class="animal-card-image-container">
-                                <img src="${imageUrl}" alt="${animal.nom_commun}" class="animal-card-image" loading="lazy">
-                            </div>
-                        ` : ''}
+                        <div class="animal-card-image-container">
+                            ${imageUrl ? `<img src="${imageUrl}" alt="${animal.nom_commun}" class="animal-card-image" loading="lazy">` : ''}
+                        </div>
                         <div class="animal-card-content">
                             <h3 class="animal-card-title">${animal.nom_commun}</h3>
                             <p class="animal-card-subtitle">${animal.nom_scientifique}</p>
@@ -696,20 +726,16 @@
                 return; 
             }
             
-            // On s'assure que la barre de navigation principale reste bien masquée
             nav.style.display = 'none';
             
-            // Mettre à jour le fil d'Ariane
             document.getElementById('breadcrumbCategoryLink').textContent = categories[currentCategory].name;
             document.getElementById('breadcrumbAnimal').textContent = currentAnimal.nom_commun;
             
             const a = currentAnimal;
             const statusInfo = iucnStatusMap[a.conservation?.statut_iucn] || iucnStatusMap['NE'];
             
-            // On filtre les images pour ne garder que celles qui sont valides
             const validImages = a.images ? a.images.filter(img => (img.url && img.url !== "undefined" && !img.url.includes('placeholder.com')) || img.data) : [];
 
-            // Définition des sous-fonctions pour générer les sections HTML
             const statsGridHTML = (mensurations) => {
                 if (!mensurations) return '';
                 let html = '';
@@ -786,7 +812,7 @@
                 const formattedEntries = Object.entries(taxonomie).map(([key, value]) => {
                     let label = key.charAt(0).toUpperCase() + key.slice(1);
                     if (key === 'regne') {
-                        label = 'Règne'; // Correction pour l'accent
+                        label = 'Règne';
                     }
                     return `<div class="taxonomy-item"><div class="taxonomy-label">${label}</div><div class="taxonomy-value">${value}</div></div>`;
                 }).join('');
@@ -794,7 +820,6 @@
                 return `<section id="taxonomie" class="container"><div class="glass-card"><h2>Classification Taxonomique</h2><div class="taxonomy-grid">${formattedEntries}</div>${etymologieHTML}</div></section>`;
             };
 
-            // Construction finale du HTML pour le #content
             content.innerHTML = `
                 <header id="accueil"><h1>${a.nom_commun}</h1><p class="subtitle">${a.nom_scientifique}</p></header>
                 
@@ -810,7 +835,7 @@
                             </div>
                             ${validImages.length > 1 ? `<div class="carousel-indicators">${validImages.map((_, i) => `<span class="indicator" onclick="goToSlide(${i})"></span>`).join('')}</div>` : ''}
                         ` : `
-                            <p class="no-images-message">Aucune image n'est actuellement disponible pour cet animal.</p>
+                            <p style="text-align: center; padding: 40px 20px; color: var(--text-light); font-style: italic;">Aucune image n'est actuellement disponible pour cet animal.</p>
                         `}
                     </div>
                 </section>
@@ -821,8 +846,7 @@
 
                 ${(a.description || a.mensurations) ? `<section id="description" class="container"><div class="glass-card"><h2>Description & Mensurations</h2>${statsGridHTML(a.mensurations)}${descriptionHTML(a.description)}</div></section>` : ''}
 
-                ${a.biologie ? `<section id="biologie" class="container"><div class="glass-card"><h2>Biologie & Comportement</h2>${Object.entries(a.biologie).map(([k,v])=>`<div class="accordion-item"><div class="accordion-header" onclick="toggleAccordion(this)"><h3>${k.replace(/\b\w/g,l=>l.toUpperCase())}</h3><span class="accordion-icon">▼</span></div><div class="accordion-content"><ul>${Object.entries(v).map(([sk,sv])=>`<li><strong>${sk.replace(/_/g,' ')}:</strong> ${Array.isArray(sv) ? sv.join(', ') : sv}</li>`).join('')}</ul></div></div>`).join('')}</div></section>` : ''}
-                
+                ${a.biologie ? `<section id="biologie" class="container"><div class="glass-card"><h2>Biologie & Comportement</h2>${Object.entries(a.biologie).map(([k,v])=>`<div class="accordion-item"><div class="accordion-header" onclick="toggleAccordion(this)"><h3>${k.charAt(0).toUpperCase() + k.slice(1)}</h3><span class="accordion-icon">▼</span></div><div class="accordion-content"><ul>${Object.entries(v).map(([sk,sv])=>`<li><strong>${titresTraduits[sk] || sk.replace(/_/g, ' ')}:</strong> ${Array.isArray(sv) ? sv.join(', ') : sv}</li>`).join('')}</ul></div></div>`).join('')}</div></section>` : ''}               
                 ${a.habitat ? `<section id="habitat" class="container"><div class="glass-card"><h2>Habitat & Répartition</h2><h3>Habitat</h3><p>${a.habitat.type} entre ${a.habitat.altitude.min} et ${a.habitat.altitude.max} ${a.habitat.altitude.unite}.</p><p><b>Préférences:</b> ${a.habitat.preferences}</p><h3>Répartition Géographique</h3><p><b>Bio-région:</b> ${a.habitat.repartition.bioregion}</p><ul>${Object.entries(a.habitat.repartition.pays).map(([p,d])=>`<li><b>${p}:</b> ${d}</li>`).join('')}</ul><h3>Mouvements</h3><p><b>Type:</b> ${a.habitat.mouvements.type}</p><ul><li><b>Année:</b> ${a.habitat.mouvements.annee}</li><li><b>Reproduction:</b> ${a.habitat.mouvements.reproduction}</li></ul></div></section>` : ''}
                 
                 ${a.conservation ? `<section id="conservation" class="container"><div class="glass-card"><h2>Conservation</h2><div style="text-align:center;"><div class="status-badge" style="background-color:${statusInfo.color};color:${statusInfo.textColor||'#000'};">${statusInfo.name}</div><p>IUCN - ${a.conservation.annee_evaluation}</p></div>${a.conservation.population ? `<div class="stats-grid">${(a.conservation.population.min === 0 && a.conservation.population.max === 0) ? `<div class="stat-box"><span class="stat-number" style="font-size: 1.5rem; line-height: 1.2; font-weight: 600;">Non estimée</span><span class="stat-label">${a.conservation.population.description}</span></div>` : `<div class="stat-box"><span class="stat-number" data-target="${a.conservation.population.max}" data-prefix="${a.conservation.population.min}-">0</span><span class="stat-label">${a.conservation.population.description}</span></div>`}<div class="stat-box"><span class="stat-number">${a.conservation.tendance === 'Décroissante' ? '↓' : (a.conservation.tendance === 'Croissante' ? '↑' : (a.conservation.tendance === 'Stable' ? '–' : '→'))}</span><span class="stat-label">Tendance</span></div></div>` : ''}${a.conservation.menaces ? `<h3>Menaces Principales</h3>${a.conservation.menaces.map(m=>`<div class="accordion-item"><div class="accordion-header" onclick="toggleAccordion(this)"><h3>${m.titre}</h3><span class="accordion-icon">▼</span></div><div class="accordion-content"><p>${m.description}</p></div></div>`).join('')}`:''}${a.conservation.mesures ? `<h3>Mesures de Conservation</h3><ul>${a.conservation.mesures.map(m=>`<li>${m}</li>`).join('')}</ul>` : ''}</div></section>` : ''}
@@ -997,7 +1021,7 @@
             document.body.removeChild(a);
         }
 		
-		async function saveFile(forceSaveAs = false) {
+		async function saveFile(forceSaveAs = true) {
     const dataContent = generateDataString();
 
     try {
@@ -1176,18 +1200,17 @@
             }
 
             // --- BLOC DE CODE MANQUANT À RAJOUTER ---
-            const scrollToTopBtn = document.getElementById('scrollToTopBtn');
-            if (scrollToTopBtn) {
-                // On vérifie si le bas de la fenêtre a atteint le bas de la page (à 1px près)
-                if ((window.innerHeight + window.scrollY) >= document.documentElement.scrollHeight - 1) {
-                    scrollToTopBtn.style.display = 'flex'; // On affiche le bouton
-                } else {
-                    scrollToTopBtn.style.display = 'none'; // On le masque
-                }
-            }
+const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+if (scrollToTopBtn) {
+    // On vérifie si l'utilisateur a défilé de plus de 300px vers le bas
+    if (window.scrollY > 300) {
+        scrollToTopBtn.style.display = 'flex'; // On affiche le bouton
+    } else {
+        scrollToTopBtn.style.display = 'none'; // On le masque
+    }
+}
             // --- FIN DU BLOC ---
 
             updateScrollProgressBar();
 
         });
-
