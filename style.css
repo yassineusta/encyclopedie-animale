@@ -1454,4 +1454,10 @@
         width: 30px;
         height: 30px;
     }
+	.no-images-message {
+    text-align: center;
+    padding: 40px 20px;
+    color: var(--text-light);
+    font-style: italic;
+    }
 }
