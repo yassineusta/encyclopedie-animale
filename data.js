@@ -12,7 +12,7 @@ let animalsData = [
                 "url": "https://cdn.download.ams.birds.cornell.edu/api/v2/asset/244503811/2400"
             },
             {
-                "url": "https://cdn.download.ams.birds.cornell.edu/api/v2/asset/543043871/2400"
+                "url": "https://cdn.download.ams.birds.cornell.edu/api/v2/asset/178814121/2400"
             },
             {
                 "url": "https://cdn.download.ams.birds.cornell.edu/api/v2/asset/546366851/2400"
@@ -5140,6 +5140,244 @@ let animalsData = [
             {
                 "titre": "Une découverte fortuite dans les filets japonais",
                 "description": "Le premier spécimen de requin-lutin jamais décrit scientifiquement fut capturé accidentellement en 1898 dans les eaux peu profondes de la baie de Tokyo, au large de Yokohama, par un pêcheur japonais utilisant des filets traditionnels. Ce spécimen exceptionnel, mesurant environ 1 mètre de long, fut acquis par le collectionneur britannique Alan Owston qui le transmit au British Museum de Londres. L'ichtyologiste David Starr Jordan décrivit formellement l'espèce en 1898, la nommant en l'honneur de son collègue japonais Kakichi Mitsukuri et du collectionneur Owston. Pendant près d'un siècle, le requin-lutin demeura une espèce extrêmement rare dans les collections scientifiques, avec moins de 50 spécimens documentés avant les années 2000, alimentant son aura de créature mythique des abysses."
+            }
+        ]
+    },
+    {
+        "id": "bec-en-sabot-du-nil",
+        "category": "oiseaux",
+        "nom_commun": "Bec-en-sabot du Nil",
+        "nom_scientifique": "Balaeniceps rex",
+        "images": [
+            {
+                "url": "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/44715931/2400"
+            },
+            {
+                "url": "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/373761801/2400"
+            },
+            {
+                "url": "https://cdn.download.ams.birds.cornell.edu/api/v2/asset/46686941/2400"
+            },
+            {
+                "url": "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/169644711/2400"
+            }
+        ],
+        "taxonomie": {
+            "regne": "Animalia",
+            "embranchement": "Chordata",
+            "classe": "Aves",
+            "ordre": "Pelecaniformes",
+            "famille": "Balaenicipitidae",
+            "genre": "Balaeniceps"
+        },
+        "etymologie": {
+            "genre": {
+                "origine": "Du latin balaena (baleine, emprunté au grec ancien φάλαινα phálaina) + -ceps, dérivé de caput (tête, cf. grec ancien κεφαλή kephalê), forgé en 1850 par John Gould lors de la description scientifique",
+                "signification": "Tête de baleine, en référence à la forme massive, bulbeuse et distinctive du bec et de la tête de l'oiseau, évoquant la tête d'un cétacé"
+            },
+            "espece": {
+                "origine": "Du latin rex (roi), épithète honorifique attribuée par John Gould en 1850",
+                "signification": "Roi, soulignant la stature imposante, l'allure majestueuse et le port altier de cet oiseau unique, lui conférant un aspect noble et régalien"
+            }
+        },
+        "noms_internationaux": {
+            "francais": {
+                "principal": "Bec-en-sabot du Nil",
+                "synonyme": "Bec-en-sabot, Abu-Markub, Balaeniceps, Oiseau-baleine"
+            },
+            "anglais": "Shoebill",
+            "espagnol": {
+                "standard": "Picozapato",
+                "colombie": "Picozapato",
+                "equateur": "Picozapato",
+                "regionaux": "Ave zapato, Picoballena, Ave picozapato del Nilo, Pico de zapato"
+            },
+            "allemand": "Schuhschnabel",
+            "turc": "Pabuç gagalı",
+            "arabe": {
+                "nom": "أبو مركوب"
+            },
+            "japonais": {
+                "nom": "ハシビロコウ",
+                "romaji": "Hashibirokō"
+            }
+        },
+        "mensurations": {
+            "male": {
+                "longueur": {
+                    "min": 110,
+                    "max": 152,
+                    "unite": "cm"
+                },
+                "masse": {
+                    "min": 5000,
+                    "max": 7000,
+                    "unite": "g"
+                },
+                "envergure": {
+                    "min": 230,
+                    "max": 260,
+                    "unite": "cm"
+                },
+                "bec": {
+                    "min": 19,
+                    "max": 24,
+                    "unite": "cm"
+                }
+            },
+            "femelle": {
+                "longueur": {
+                    "min": 110,
+                    "max": 140,
+                    "unite": "cm"
+                },
+                "masse": {
+                    "min": 4000,
+                    "max": 5600,
+                    "unite": "g"
+                },
+                "envergure": {
+                    "min": 230,
+                    "max": 260,
+                    "unite": "cm"
+                },
+                "bec": {
+                    "min": 18.8,
+                    "max": 23,
+                    "unite": "cm"
+                }
+            }
+        },
+        "description": {
+            "male": [
+                "Plumage principalement gris-bleu ardoisé avec des reflets verdâtres sur le dos et des plumes de vol plus sombres, donnant un aspect robuste et ébouriffé",
+                "Bec massif et bulbeux en forme de sabot, de couleur jaune paille à rosâtre avec des marbrures grises, mesurant jusqu'à 24 cm de long et se terminant par un crochet acéré pour saisir les proies",
+                "Yeux jaunes pâles ou grisâtres positionnés frontalement, offrant une vision binoculaire précise, surmontés d'une petite crête occipitale hirsute et érectile",
+                "Longues pattes noires fines adaptées à la marche dans les marais boueux, avec une posture droite et statuaire conférant une allure préhistorique",
+                "Tête large et volumineuse sur un cou épais, avec des ailes larges pour le vol plané"
+            ],
+            "femelle": [
+                "Plumage similaire au mâle, gris-bleu cendré uniforme avec des nuances plus claires sur le ventre et des plumes de vol sombres, sans dimorphisme marqué",
+                "Bec imposant en forme de sabot, légèrement plus petit que chez le mâle, de 18.8 à 23 cm, avec le même crochet terminal et les marbrures grises",
+                "Yeux jaunes perçants et tête large avec crête nucale désordonnée, identique au mâle en apparence générale",
+                "Taille globale légèrement inférieure, avec des pattes sombres et une silhouette massive comparable, mais une masse moyenne plus faible",
+                "Jeunes plus brunâtres avec bec moins développé initialement, mais adultes indiscernables sans mesures"
+            ]
+        },
+        "biologie": {
+            "alimentation": {
+                "regime": "Piscivore et carnivore opportuniste spécialisé dans les proies de grande taille à respiration aérienne",
+                "familles_preferees": [
+                    "Protopteridae (Protopterus, poissons-poumons africains)",
+                    "Clariidae (Clarias, poissons-chats africains)",
+                    "Cichlidae (Oreochromis, Tilapia, cichlidés)",
+                    "Polypteridae (Polypterus, bichirs)"
+                ],
+                "complement": "Grenouilles (Xenopus, Ptychadena), serpents d'eau, varans du Nil, jeunes crocodiles, tortues, escargots, rongeurs, petits oiseaux et occasionnellement charognes",
+                "role_ecologique": "Prédateur apex dans les écosystèmes marécageux, régulant les populations de poissons hypoxiques comme les poissons-poumons et poissons-chats, contribuant à l'équilibre trophique et servant d'espèce indicatrice pour la santé des zones humides"
+            },
+            "comportement": {
+                "social": "Solitaire et territorial en dehors de la reproduction, défendant des zones de 2-4 km² avec une distance minimale de 20-100 m entre individus; forme des paires monogames temporaires pendant la nidification mais chasse séparément",
+                "habitat_vertical": "Strates basses aquatiques et semi-aquatiques, occupant la surface de l'eau et la végétation flottante comme papyrus et roseaux pour la chasse à l'affût",
+                "locomotion": "Marche lente et délibérée dans l'eau peu profonde avec démarche chaloupée; vol lourd et puissant avec battements lents (150 par minute), alternant planés, cou rétracté, sur des distances courtes à moyennes (rarement >500 m)"
+            },
+            "vocalisations": {
+                "description": "Principalement silencieux; claquements de bec forts et percussifs ressemblant à des tirs de mitrailleuse, mugissements sourds comme des vaches, gémissements aigus et stridents pendant parades ou interactions; jeunes émettent des hoquets nasillards",
+                "portee": "Jusqu'à 1.5 km pour les claquements",
+                "frequence": "Basses fréquences 200-500 Hz pour claquements, 800-1500 Hz pour gémissements juvéniles",
+                "amplification": "Bec large et creux agissant comme caisse de résonance, amplifié par cavités nasales, poche gulaire gonflable et structure osseuse du crâne lors des démonstrations territoriales ou nuptiales"
+            },
+            "reproduction": {
+                "systeme": "Monogame saisonnier, avec couples fidèles défendant des territoires de 2-4 km²",
+                "parade": "Claquements de bec synchronisés, inclinaisons et hochements de tête, révérences face à face, offrandes de nourriture ou végétation, vols courts avec cou tendu pour renforcer le lien",
+                "nidification": "Nid en plateforme massive de 1-3 m de diamètre, construit de papyrus, roseaux, herbes et boue sur végétation flottante ou îlot submergé, par les deux parents",
+                "ponte": "1-3 œufs (souvent 2) blancs crayeux de 80-90 mm x 56-61 mm, pondus à intervalles de 3-5 jours à la fin des pluies",
+                "incubation": "30 jours, relayée par les deux parents avec retournements et aspersion d'eau pour humidité",
+                "soins": "Les deux parents nourrissent par régurgitation, rafraîchissent avec eau du bec, protègent des prédateurs; souvent seul le premier-né survit via caïnisme, envol à 95-115 jours, indépendance à 140 jours"
+            }
+        },
+        "habitat": {
+            "type": "Marais d'eau douce permanents et saisonniers avec végétation dense de papyrus, roseaux, typha et chenaux ouverts, eaux stagnantes pauvres en oxygène",
+            "altitude": {
+                "min": 0,
+                "max": 1500,
+                "unite": "m"
+            },
+            "preferences": "Zones avec eau peu profonde (30-150 cm), végétation flottante pour affût, clairières alternant avec couverts denses; évite papyrus purs, courants rapides et perturbations humaines",
+            "repartition": {
+                "bioregion": "Afrotropicale, marais d'Afrique centrale et orientale, bassins du Nil Blanc, Congo et Rift",
+                "pays": {
+                    "Soudan du Sud": "Population principale dans les marais du Sudd (57000 km²), abritant 40-50% des individus mondiaux, zone clé pour reproduction",
+                    "Ouganda": "Dans marais de Mabamba, lacs Victoria/Kyoga/Albert, Murchison Falls; 800-1200 individus, sites d'écotourisme",
+                    "Zambie": "Marais de Bangweulu (15000 km²) et Kafue; 1000-1500 individus, protégés dans parcs nationaux",
+                    "Tanzanie": "Marais de Malagarasi-Moyowosi (15000 km²), lac Tanganyika; 500-800 individus, répartition fragmentée",
+                    "République Démocratique du Congo": "Bassin du Congo, lacs Tumba/Mai-Ndombe; 1500-2500 individus sous-estimés dû à inaccessibilité",
+                    "Éthiopie": "Marais de Gambela, Baro-Akobo; <100 individus, habitat menacé",
+                    "Rwanda": "Marais de Rugezi, lac Rweru; <50 individus, déclin par drainage",
+                    "République Centrafricaine": "Plaines de l'Oubangui; <200 individus, mal documentés"
+                }
+            },
+            "mouvements": {
+                "type": "Sédentaire avec déplacements locaux nomades liés aux niveaux d'eau et proies",
+                "annee": "Occupation permanente des marais avec territoires stables de 2-4 km², ajustements saisonniers",
+                "reproduction": "La nidification est synchronisée avec la décrue, qui concentre les proies et rend la chasse plus facile pour nourrir le jeune."
+            }
+        },
+        "conservation": {
+            "statut_iucn": "VU",
+            "annee_evaluation": 2024,
+            "population": {
+                "min": 3300,
+                "max": 5300,
+                "description": "individus matures estimés, avec incertitudes dues à l'inaccessibilité des habitats"
+            },
+            "tendance": "Décroissante",
+            "menaces": [
+                {
+                    "titre": "Destruction et dégradation de l'habitat",
+                    "description": "Conversion des marais en agriculture, pâturages, canaux de drainage et exploration pétrolière, exacerbée par feux et barrages; affecte >50% des habitats, perte 2-3% annuelle en Afrique centrale"
+                },
+                {
+                    "titre": "Chasse, capture et commerce illégal",
+                    "description": "Prélèvements d'œufs, poussins et adultes pour consommation, zoos et marché noir (prix 10000-20000 USD); mortalité élevée au transport, impactant populations isolées en Ouganda/Tanzanie"
+                },
+                {
+                    "titre": "Perturbations humaines et conflits",
+                    "description": "Dérangements par tourisme non régulé, pêche, surpâturage et guerres causant abandon de nids (15-30% échecs); notable au Soudan/RDC, avec infrastructures fragmentant habitats"
+                },
+                {
+                    "titre": "Pollution et changements climatiques",
+                    "description": "Pesticides, métaux lourds et pollution industrielle contaminant chaînes trophiques; bioaccumulation affectant fertilité; altérations hydrologiques par climat menacent disponibilité proies"
+                }
+            ],
+            "mesures": [
+                "Protection légale et application des lois anti-braconnage, inscription Annexe II CITES pour réguler commerce, avec patrouilles et sanctions dissuasives",
+                "Gestion d'aires protégées comme parcs nationaux (Murchison Falls, Bangweulu) et sites Ramsar, couvrant >60% habitats critiques d'ici 2030",
+                "Programmes de reproduction captive en zoos (EAZA/AZA) pour population de sécurité (150-200 individus), avec protocoles de réintroduction",
+                "Initiatives communautaires et écotourisme durable générant revenus alternatifs (ex: Mabamba Bay, 250000 USD/an pour 500 familles), sensibilisation locale",
+                "Suivi scientifique avec télémétrie, recensements bisannuels par BirdLife/IUCN, études sur impacts climatiques et restauration habitats"
+            ]
+        },
+        "anecdotes": [
+            {
+                "titre": "Un regard préhistorique qui intimide",
+                "description": "Le bec-en-sabot du Nil, souvent surnommé 'oiseau dinosaure', intrigue par son apparence archaïque et son regard fixe menaçant. Découvert en 1850 par John Gould, sa classification a longtemps été débattue, initialement avec les cigognes avant d'être placé chez les Pelecaniformes via analyses génétiques. Dans cultures africaines, il symbolise puissance et est craint pour son bec tranchant décapitant proies. Observations montrent immobilité statue-like pour embuscades, renforçant aura mystique. Espèce monotypique, il évoque fossiles vivants, avec vision binoculaire précise pour chasse précise dans marais troubles."
+            },
+            {
+                "titre": "Le claquement de bec comme une mitrailleuse",
+                "description": "La vocalisation unique du bec-en-sabot est un claquement rapide ressemblant à une mitrailleuse, servant à communication nuptiale et territoriale. Produit par percussion mandibules, amplifié par bec creux, il porte sur >1 km dans marais silencieux. Enregistrements révèlent aide à coordination paires sans attirer prédateurs. Anecdotes de naturalistes décrivent sons effrayants explorateurs, pensant à menaces humaines. Juvéniles pratiquent tôt pour interactions parentales. Ce rituel renforce liens couples et délimite territoires vastes, essentiel dans habitats isolés où visibilité limitée."
+            },
+            {
+                "titre": "Un prédateur impitoyable avec les proies",
+                "description": "Chasseur redoutable, le bec-en-sabot décapite poissons et reptiles d'un coup de bec affûté, avec force >500 newtons et accélération 5G. Études documentent ingestion de proies comme bébés crocodiles entiers. Chasse par embuscade immobile heures dans eau trouble, taux succès 60% pour poissons surface. Stratégie opportuniste survie environnements hypoxiques. Dans légendes soudanaises, gardien marais sacrés contre intrus. Soigneurs zoos rapportent blessures sévères, soulignant danger bec marteau-like capable briser carapaces."
+            },
+            {
+                "titre": "Un survivant préhistorique au regard d'acier",
+                "description": "Considéré fossile vivant, le bec-en-sabot a origines taxonomiques débattues, proche pélicans et ombrette via génétique récente. Apparence primitive avec bec massif et regard perçant évoque dinosaures aviaires. Comportement stoïque solitaire contribue statut mythique chez ornithologues. Technique chasse 'affût-effondrement' : figé heures avant frappe explosive, secouant tête rejeter végétation avant avalement proie tête première. Adaptations physiologiques comme verrouillage pattes permettent immobilité sans fatigue, record >8 heures."
+            },
+            {
+                "titre": "Reconnaissance culturelle et vénération traditionnelle",
+                "description": "Dans cultures africaines, bec-en-sabot occupe place symbolique avec tabous chasse chez Dinka/Nuer Soudan, croyant tuer apporte sécheresse; vu messager dieux marais. Nom arabe Abu Markub (père soulier) témoigne fascination bec. Au Japon, célébrité réseaux sociaux depuis 2015, millions vues vidéos comportement stoïque, surnom 'gentleman marais', générant soutien financier conservation. Initiatives locales comme protection nids Bangweulu luttent commerce, montrant écotourisme encadré finance patrouilles et valorise espèce durablement."
             }
         ]
     }
