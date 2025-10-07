@@ -707,7 +707,7 @@
             const statusInfo = iucnStatusMap[a.conservation?.statut_iucn] || iucnStatusMap['NE'];
             
             // On filtre les images pour ne garder que celles qui sont valides
-            const validImages = a.images ? a.images.filter(img => (img.url && img.url !== "undefined") || img.data) : [];
+            const validImages = a.images ? a.images.filter(img => (img.url && img.url !== "undefined" && !img.url.includes('placeholder.com')) || img.data) : [];
 
             // Définition des sous-fonctions pour générer les sections HTML
             const statsGridHTML = (mensurations) => {
@@ -786,7 +786,7 @@
                 const formattedEntries = Object.entries(taxonomie).map(([key, value]) => {
                     let label = key.charAt(0).toUpperCase() + key.slice(1);
                     if (key === 'regne') {
-                        label = 'Règne';
+                        label = 'Règne'; // Correction pour l'accent
                     }
                     return `<div class="taxonomy-item"><div class="taxonomy-label">${label}</div><div class="taxonomy-value">${value}</div></div>`;
                 }).join('');
@@ -798,27 +798,22 @@
             content.innerHTML = `
                 <header id="accueil"><h1>${a.nom_commun}</h1><p class="subtitle">${a.nom_scientifique}</p></header>
                 
-                ${validImages.length > 0 ? `
                 <section id="galerie" class="container">
                     <div class="glass-card">
                         <h2>Galerie Photographique</h2>
-                        <div class="carousel-container">
-                            <div class="carousel-wrapper" id="carouselWrapper">
-                                ${validImages.map(img => `<div class="carousel-slide"><img src="${img.url || img.data}" alt="Photo de ${a.nom_commun}" loading="lazy"></div>`).join('')}
+                        ${validImages.length > 0 ? `
+                            <div class="carousel-container">
+                                <div class="carousel-wrapper" id="carouselWrapper">
+                                    ${validImages.map(img => `<div class="carousel-slide"><img src="${img.url || img.data}" alt="Photo de ${a.nom_commun}" loading="lazy"></div>`).join('')}
+                                </div>
+                                ${validImages.length > 1 ? `<button class="carousel-btn prev" onclick="moveCarousel(-1)">❮</button><button class="carousel-btn next" onclick="moveCarousel(1)">❯</button>` : ''}
                             </div>
-                            ${validImages.length > 1 ? `<button class="carousel-btn prev" onclick="moveCarousel(-1)">❮</button><button class="carousel-btn next" onclick="moveCarousel(1)">❯</button>` : ''}
-                        </div>
-                        ${validImages.length > 1 ? `<div class="carousel-indicators">${validImages.map((_, i) => `<span class="indicator" onclick="goToSlide(${i})"></span>`).join('')}</div>` : ''}
+                            ${validImages.length > 1 ? `<div class="carousel-indicators">${validImages.map((_, i) => `<span class="indicator" onclick="goToSlide(${i})"></span>`).join('')}</div>` : ''}
+                        ` : `
+                            <p class="no-images-message">Aucune image n'est actuellement disponible pour cet animal.</p>
+                        `}
                     </div>
                 </section>
-                ` : `
-                <section id="galerie" class="container">
-                    <div class="glass-card">
-                        <h2>Galerie Photographique</h2>
-                        <p class="no-images-message">Aucune image n'est actuellement disponible pour cet animal.</p>
-                    </div>
-                </section>
-                `}
                 
                 ${taxonomieHTML(a.taxonomie)}
                 
@@ -1195,3 +1190,4 @@
             updateScrollProgressBar();
 
         });
+
