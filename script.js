@@ -716,7 +716,7 @@ function getDynamicReproductionLabel(labelKey, category) {
             
             list.innerHTML = animals.map(animal => `
                 <li class="animal-item ${currentAnimal && animal.id === currentAnimal.id ? 'active' : ''}" data-animal-id="${animal.id}">
-                    <div class="animal-info" onclick="selectAnimal('${animal.id}')"><h3>${animal.nom_commun}</h3><p>${animal.nom_scientifique}</p></div>
+                    <div class="animal-info" onclick="selectAnimal('${animal.id}', true)"><h3>${animal.nom_commun}</h3><p>${animal.nom_scientifique}</p></div>
                     <button class="edit-images-btn" onclick="openEditImagesModal('${animal.id}', event)" title="Images"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg></button>
                     <button class="edit-json-btn" onclick="openEditJSONModal('${animal.id}', event)" title="JSON"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg></button>
                     <button class="delete-animal-btn" onclick="deleteAnimal('${animal.id}', event)" title="Supprimer"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></button>
@@ -726,7 +726,7 @@ function getDynamicReproductionLabel(labelKey, category) {
         function selectAnimal(animalId) {
             loadAnimal(animalId);
             loadAnimalList();
-            if (window.innerWidth <= 768) {
+            if (fromSidebar && window.innerWidth <= 768) {
                 toggleSidebar();
             }
         }
