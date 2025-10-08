@@ -1362,6 +1362,18 @@
 [data-theme="dark"] .category-card h2 {
     color: #ffffff;
 }
+
+/* ======================================================= */
+/* ==   CORRECTION POUR TABLETTES (MODE PAYSAGE/PORTRAIT) == */
+/* ======================================================= */
+@media screen and (min-width: 768px) and (max-width: 1100px) {
+
+    /* --- Correction Grille Taxonomique --- */
+    /* On force une grille de 3 colonnes pour éviter le débordement du texte sur les tablettes. */
+    .taxonomy-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
 /* ======================================================= */
 /* ==   BLOC COMPLET POUR L'AFFICHAGE SUR SMARTPHONE    == */
 /* ======================================================= */
