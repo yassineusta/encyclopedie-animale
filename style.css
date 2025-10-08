@@ -1373,6 +1373,16 @@
     .taxonomy-grid {
         grid-template-columns: repeat(3, 1fr);
     }
+
+    /* --- Ajustement de l'espacement du titre sur tablette --- */
+    #content header {
+        /* On définit un espacement vertical spécifique pour les tablettes */
+        padding-top: 120px;
+    }
+	
+	.stat-number {
+    font-size: 2.0rem; /* Taille par défaut: 2.5rem, smartphone: 1.6rem */
+}
 }
 /* ======================================================= */
 /* ==   BLOC COMPLET POUR L'AFFICHAGE SUR SMARTPHONE    == */
@@ -1438,7 +1448,7 @@
 
     /* --- Correction des titres trop grands --- */
     #content header {
-        padding: 20px 20px 40px 20px;
+        padding: 90px 20px 40px 20px;
     }
     /* Titre principal (ex: "Coracine Casquée") */
     #content h1 {
