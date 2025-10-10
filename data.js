@@ -4343,10 +4343,10 @@ let animalsData = [
         "nom_scientifique": "Cholus pilicauda",
         "images": [
             {
-                "url": "https://scontent-sjc3-1.xx.fbcdn.net/v/t39.30808-6/503126828_10227297746941724_2864284581356396085_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=8pvVwNC8TiEQ7kNvwFns4iz&_nc_oc=AdkWAxkofap0nL43T-hsfTzsgYYyEw2u21yu36ZbOueGfDW5ExNGbjfeCCkntfxb1Js&_nc_zt=23&_nc_ht=scontent-sjc3-1.xx&_nc_gid=A_cBenlTKOQowiOd_3un3Q&oh=00_Afe0ZesXH0Im2pRaWX7YUIAuxMPHPToCugxqZ-L1rHNnKw&oe=68E72EEC"
+                "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/33215211/large.jpg"
             },
             {
-                "url": "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.30808-6/503606895_10227297745261682_2663637208706293179_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=Tn13JtpxUuUQ7kNvwFoJDJ-&_nc_oc=AdkM6fyAgI9BgUoYpUTOjHf_eKqP8Ejdmh1lJo47TRX5olU_zMin0atNGeZ7VYYY-DE&_nc_zt=23&_nc_ht=scontent-sjc6-1.xx&_nc_gid=lmTYwf-1_Nazpk-4p_Xz6Q&oh=00_AffMk52SPoVb-XNw9a48lCG0PFgCVzRrz2l0VDq2DPkLeQ&oe=68E75B1E"
+                "url": "https://www.holzcol.at/wp-content/uploads/2020/02/Cholus-pilicauda-1-Costa-Rica-Corcovado-NP.jpg"
             },
             {
                 "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/33215197/medium.jpg"
@@ -7927,6 +7927,1087 @@ let animalsData = [
             {
                 "titre": "Le camouflage parfait de la feuille morte",
                 "description": "Le mimétisme du Pipa avec une feuille en décomposition est l'un des exemples les plus aboutis de camouflage chez les amphibiens. Son corps aplati, sa couleur brune mouchetée et sa peau verruqueuse le rendent pratiquement indétectable au fond de l'eau. Il peut rester complètement immobile pendant des heures, attendant qu'une proie passe à portée. Cette stratégie d'embuscade passive lui permet d'économiser son énergie tout en échappant à ses prédateurs. Les jeunes crapauds, dès leur émergence, possèdent déjà ce camouflage efficace, ressemblant à de minuscules fragments de feuilles mortes."
+            }
+        ]
+    },
+    {
+        "id": "numbat",
+        "category": "mammiferes",
+        "nom_commun": "Numbat",
+        "nom_scientifique": "Myrmecobius fasciatus",
+        "images": [
+            {
+                "url": "https://static.inaturalist.org/photos/431530407/medium.jpg"
+            },
+            {
+                "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/578320158/large.jpg"
+            },
+            {
+                "url": "https://i.redd.it/9rsqvkqi98t51.jpg"
+            },
+            {
+                "url": "https://www.australiangeographic.com.au/wp-content/uploads/2021/06/a-1-RMCL8259.jpg"
+            }
+        ],
+        "taxonomie": {
+            "regne": "Animalia",
+            "embranchement": "Chordata",
+            "classe": "Mammalia",
+            "ordre": "Dasyuromorphia",
+            "famille": "Myrmecobiidae",
+            "genre": "Myrmecobius"
+        },
+        "etymologie": {
+            "genre": {
+                "origine": "Du grec ancien μύρμηξ (myrmex, génitif μύρμηκος múrmēkos) signifiant 'fourmi' et βίος (bíos) signifiant 'vie'. Le terme myrmex dérive de la racine proto-indo-européenne *morwi- qui désigne les fourmis.",
+                "signification": "Littéralement 'qui vit de fourmis' ou 'vie de fourmi', en référence au régime alimentaire spécialisé de cet animal qui se nourrit exclusivement de termites, bien que le terme grec désigne techniquement les fourmis."
+            },
+            "espece": {
+                "origine": "Du latin fasciatus, participe passé de fasciare signifiant 'bander, entourer de bandelettes', dérivé de fascia 'bande, bandeau'.",
+                "signification": "Fait référence aux bandes ou rayures blanches distinctives qui traversent le dos et l'arrière-train de l'animal, caractéristique morphologique la plus reconnaissable de l'espèce."
+            }
+        },
+        "noms_internationaux": {
+            "francais": {
+                "principal": "Numbat",
+                "synonyme": "Myrmécobie fasciée"
+            },
+            "anglais": "Numbat",
+            "espagnol": {
+                "standard": "Numbat",
+                "colombie": "Numbat",
+                "equateur": "Numbat",
+                "regionaux": "Oso hormiguero marsupial (usage occasionnel)"
+            },
+            "allemand": "Ameisenbeutler",
+            "turc": "Numbat",
+            "arabe": {
+                "nom": "نمبات"
+            },
+            "japonais": {
+                "nom": "フクロアリクイ",
+                "romaji": "Fukuroarikui"
+            }
+        },
+        "mensurations": {
+            "male": {
+                "longueur": {
+                    "min": 35,
+                    "max": 45,
+                    "unite": "cm"
+                },
+                "masse": {
+                    "min": 450,
+                    "max": 900,
+                    "unite": "g"
+                }
+            },
+            "femelle": {
+                "longueur": {
+                    "min": 32,
+                    "max": 42,
+                    "unite": "cm"
+                },
+                "masse": {
+                    "min": 300,
+                    "max": 750,
+                    "unite": "g"
+                }
+            }
+        },
+        "description": {
+            "male": [
+                "Pelage de couleur variable allant du gris doux au brun-rougeâtre, souvent avec une zone rouge brique sur le haut du dos.",
+                "Bande noire distinctive partant du museau, traversant l'œil et se terminant à la base de l'oreille petite et arrondie.",
+                "Entre six et onze bandes blanches traversent l'arrière-train sur un fond sombre, formant un motif unique à chaque individu.",
+                "Museau finement pointu et queue touffue proéminente. Possède une glande sternale utilisée pour le marquage territorial, particulièrement active en saison de reproduction."
+            ],
+            "femelle": [
+                "Coloration et patron de rayures identiques au mâle, bien que légèrement plus petite et moins massive en moyenne.",
+                "Absence de poche marsupiale complète, une caractéristique unique. Les quatre mamelles sont protégées par des replis de peau et une zone de poils crêpés et dorés.",
+                "La queue touffue est utilisée pour l'équilibre et la communication visuelle, souvent tenue dressée lors des déplacements.",
+                "Comme le mâle, chaque femelle possède un motif de rayures unique sur son arrière-train, permettant une identification individuelle."
+            ]
+        },
+        "biologie": {
+            "alimentation": {
+                "regime": "Termitivore strict, l'un des très rares mammifères au monde à se nourrir quasi exclusivement de termites.",
+                "familles_preferees": [
+                    "Termitidae (diverses espèces de termites des régions arides et semi-arides)",
+                    "Rhinotermitidae (termites souterrains qui construisent des galeries peu profondes)",
+                    "Mastotermitidae (Mastotermes darwiniensis - termite géant australien)"
+                ],
+                "complement": "Consomme environ 10 000 à 20 000 termites par jour. L'ingestion de fourmis ou d'autres arthropodes est accidentelle. Il obtient toute l'eau dont il a besoin de ses proies, n'ayant pas besoin de boire.",
+                "role_ecologique": "Régulateur majeur des populations de termites dans les forêts d'eucalyptus. Son activité de fouissage contribue à l'aération et au brassage des sols forestiers, améliorant leur santé."
+            },
+            "comportement": {
+                "social": "Strictement solitaire et territorial. Les individus défendent un territoire pouvant atteindre 1,5 km² contre les congénères du même sexe. Les interactions se limitent à la reproduction.",
+                "habitat_vertical": "Exclusivement terrestre et fouisseur. Il passe son temps au sol à la recherche de galeries de termites, généralement situées entre 5 et 50 cm sous la surface. Il ne grimpe pas aux arbres.",
+                "locomotion": "Quadrupède agile, capable de galoper rapidement à plus de 30 km/h avec une démarche bondissante. Ses griffes puissantes sont utilisées pour creuser la terre meuble et exposer les galeries de termites."
+            },
+            "vocalisations": {
+                "description": "Animal très silencieux. Les vocalisations sont rares et se limitent à des grognements bas et gutturaux émis par les femelles rejetant les avances d'un mâle, ou de petits cris de contact entre la mère et ses jeunes.",
+                "portee": "Courte distance, probablement inférieure à 50 mètres, utilisée pour des communications de proximité.",
+                "frequence": "Fréquences basses pour les grognements, non documentées avec précision.",
+                "amplification": "Aucun mécanisme d'amplification spécialisé. Les sons sont produits avec la bouche fermée ou légèrement ouverte, sans structure anatomique particulière pour augmenter le volume."
+            },
+            "reproduction": {
+                "systeme": "Système polygynandre avec promiscuité. Les mâles et les femelles peuvent s'accoupler avec plusieurs partenaires au cours de la saison de reproduction (été austral).",
+                "parade": "Avant l'accouplement, la glande sternale du mâle sécrète une substance huileuse et odorante. Il frotte sa poitrine sur des troncs et des rochers pour marquer son territoire et attirer les femelles. Les parades sont brèves et peuvent inclure des poursuites.",
+                "nidification": "La femelle met bas dans un abri sécurisé : un tronc creux, un terrier souterrain de 1 à 2 mètres de profondeur, ou un nid qu'elle construit avec de l'écorce, de l'herbe et des feuilles. Le mâle ne participe pas à la construction ni à l'élevage.",
+                "ponte": "La portée est systématiquement de quatre jeunes, nés en janvier ou février. À la naissance, ils sont immatures, sans poils, aveugles et ne mesurent que 2 centimètres. Ils doivent ramper jusqu'aux mamelles pour survivre.",
+                "incubation": "La période de gestation est de 14 à 15 jours, l'une des plus courtes de tous les mammifères. Les jeunes restent ensuite attachés en permanence aux mamelles pendant environ 6 mois, période durant laquelle ils grandissent et développent leur pelage rayé.",
+                "soins": "Les soins sont entièrement assurés par la femelle. Après s'être détachés des mamelles vers juillet-août, les jeunes sont laissés dans le nid. La mère revient les allaiter jusqu'au sevrage complet vers 10-11 mois. Ils deviennent totalement indépendants à 12 mois."
+            }
+        },
+        "habitat": {
+            "type": "Forêts et boisements d'eucalyptus (principalement Jarrah et Wandoo) avec un sous-étage arbustif ouvert et une abondance de troncs creux et de bois mort au sol.",
+            "altitude": {
+                "min": 0,
+                "max": 600,
+                "unite": "m"
+            },
+            "preferences": "Sols sableux bien drainés, favorables à l'activité des termites. Recherche activement les zones avec une forte densité de troncs creux qui sont essentiels comme refuges contre les prédateurs et les extrêmes climatiques.",
+            "repartition": {
+                "bioregion": "Écorégion des forêts tempérées du sud-ouest australien. Historiquement présent dans une grande partie du sud de l'Australie, il a disparu de 99% de son aire de répartition.",
+                "pays": {
+                    "Australie": "Endémique. Ne subsiste à l'état naturel que dans deux populations en Australie-Occidentale (Dryandra Woodland et Perup Nature Reserve). Des populations ont été réintroduites avec succès dans des sanctuaires clôturés en Australie-Méridionale et en Nouvelle-Galles du Sud."
+                }
+            },
+            "mouvements": {
+                "type": "Sédentaire. Les individus établissent un territoire permanent et y restent toute leur vie. Fait unique, il est diurne, son activité étant synchronisée avec celle des termites.",
+                "annee": "Reste dans son territoire toute l'année, mais change de refuge (bûche creuse, terrier) presque chaque nuit pour réduire le risque de prédation.",
+                "reproduction": "Aucun déplacement migratoire. Les mâles peuvent s'aventurer brièvement hors de leur territoire durant la saison d'accouplement pour trouver des femelles, mais y retournent ensuite."
+            }
+        },
+        "conservation": {
+            "statut_iucn": "EN",
+            "annee_evaluation": 2024,
+            "population": {
+                "min": 800,
+                "max": 1000,
+                "description": "individus matures estimés dans la nature, répartis entre les populations naturelles et réintroduites."
+            },
+            "tendance": "Stable",
+            "menaces": [
+                {
+                    "titre": "Prédation par les espèces introduites",
+                    "description": "Le renard roux (Vulpes vulpes) et le chat haret (Felis catus) sont les menaces principales. Le renard est responsable du déclin historique de 99% de la population. Aujourd'hui, le chat féral est le plus grand obstacle à la récupération de l'espèce, étant plus difficile à contrôler et très efficace pour chasser les numbats."
+                },
+                {
+                    "titre": "Perte et fragmentation de l'habitat",
+                    "description": "Le défrichement des forêts pour l'agriculture et l'urbanisation a détruit et fragmenté l'habitat du numbat. La suppression des troncs creux et du bois mort pour le bois de chauffage élimine les abris vitaux et les nids de termites, réduisant à la fois la protection et la nourriture."
+                },
+                {
+                    "titre": "Régimes de feux inappropriés",
+                    "description": "Les incendies de brousse trop fréquents ou d'une intensité trop élevée détruisent les bûches creuses et le bois mort au sol. Cela élimine les abris essentiels, rendant les numbats survivants extrêmement vulnérables à la prédation dans un paysage dénudé."
+                }
+            ],
+            "mesures": [
+                "Programmes intensifs de contrôle des prédateurs, notamment par des appâts empoisonnés (1080) qui ont prouvé leur efficacité en multipliant par 40 les observations de numbats dans les zones traitées.",
+                "Établissement de sanctuaires clôturés, totalement exempts de prédateurs, qui servent de 'populations d'assurance' et de source d'individus pour les futures réintroductions.",
+                "Programme d'élevage en captivité au Zoo de Perth, qui a produit des centaines de jeunes numbats depuis 1993, maintenant la diversité génétique et soutenant les efforts de translocation.",
+                "Gestion active de l'habitat, incluant la protection des forêts matures, la restauration de corridors écologiques et l'application de brûlages dirigés pour imiter les régimes de feux naturels et préserver les ressources."
+            ]
+        },
+        "anecdotes": [
+            {
+                "titre": "L'emblème animalier de l'Australie-Occidentale et un survivant",
+                "description": "Proclamé emblème faunique officiel de l'Australie-Occidentale en 1973, le numbat est un symbole de résilience. Après avoir frôlé l'extinction dans les années 1980 avec moins de 300 individus restants, des efforts de conservation acharnés ont permis une récupération remarquable. Son histoire démontre que des espèces au bord du gouffre peuvent être sauvées grâce à des stratégies de conservation ciblées et un soutien continu."
+            },
+            {
+                "titre": "Un marsupial diurne avec la meilleure vision",
+                "description": "Le numbat est l'un des deux seuls marsupiaux australiens strictement diurnes, une adaptation à l'activité de ses proies. Pour survivre en plein jour, il a développé l'acuité visuelle la plus élevée de tous les marsupiaux, avec une rétine riche en cellules coniques. Cette vision exceptionnelle est cruciale pour détecter les prédateurs aériens, comme les aigles et les faucons, qui constituent une menace majeure pendant ses heures d'activité."
+            },
+            {
+                "titre": "Des empreintes digitales sur le pelage et des dents inutiles",
+                "description": "Le patron de rayures de chaque numbat est unique, agissant comme une empreinte digitale. Les chercheurs utilisent la photo-identification pour suivre les individus sans avoir à les capturer. Paradoxalement, bien qu'il possède jusqu'à 52 dents (plus que tout autre marsupial terrestre), celles-ci sont minuscules et non fonctionnelles. Il avale les termites entières, les écrasant simplement contre son palais avant de les déglutir."
+            },
+            {
+                "titre": "Le dernier survivant d'une famille ancestrale",
+                "description": "Le numbat est le seul membre encore vivant de la famille des Myrmecobiidae, une lignée qui a divergé des autres marsupiaux il y a 32 à 42 millions d'années. Il n'a aucun parent proche, ce qui rend sa conservation d'autant plus critique. Sa perte signifierait l'extinction d'une branche entière et ancienne de l'arbre évolutif des mammifères. Une sous-espèce, le numbat roux (M. f. rufus), qui vivait dans les zones arides, s'est déjà éteinte dans les années 1960."
+            },
+            {
+                "titre": "Une langue extraordinaire et une thermorégulation de pointe",
+                "description": "La langue du numbat peut s'étendre jusqu'à 11 centimètres, soit près de la moitié de la longueur de son corps. Enduite d'une salive très collante, elle est l'outil parfait pour capturer 20 000 termites par jour. Pour gérer son énergie, il pratique la thermorégulation : il prend des bains de soleil le matin pour se réchauffer et peut entrer dans un état de torpeur (un sommeil profond et économe en énergie) qui peut durer jusqu'à 15 heures pendant les jours froids d'hiver."
+            },
+            {
+                "titre": "Autonomie hydrique totale et un génome révélateur",
+                "description": "Le numbat est un cas remarquable d'adaptation à la sécheresse : il ne boit jamais d'eau. Toute l'hydratation dont il a besoin est extraite des termites qu'il consomme. Son système digestif est d'ailleurs étonnamment simple, car l'exosquelette des termites est plus tendre que celui des fourmis. Le premier génome complet du numbat, séquencé en 2022, a révélé des gènes liés à une forte réponse immunitaire dans sa salive, le protégeant des pathogènes ingérés avec ses proies."
+            }
+        ]
+    },
+    {
+        "id": "empusa-pennata",
+        "category": "insectes",
+        "nom_commun": "Empuse Pennée",
+        "nom_scientifique": "Empusa pennata",
+        "images": [
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Conehead_Mantis_%28Empusa_pennata%29%2C_Serra_de_S%C3%A3o_Mamede%2C_Portugal_%2846795251045%29.jpg/800px-Conehead_Mantis_%28Empusa_pennata%29%2C_Serra_de_S%C3%A3o_Mamede%2C_Portugal_%2846795251045%29.jpg"
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Empusa_pennata_close.jpg/800px-Empusa_pennata_close.jpg"
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/%28MHNT%29_Empusa_pennata_-_Female_Portrait.jpg/800px-%28MHNT%29_Empusa_pennata_-_Female_Portrait.jpg"
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Empusa_pennata%2C_La_Llacuna%2C_Catalunya_1.jpg/1024px-Empusa_pennata%2C_La_Llacuna%2C_Catalunya_1.jpg"
+            }
+        ],
+        "taxonomie": {
+            "regne": "Animalia",
+            "embranchement": "Arthropoda",
+            "classe": "Insecta",
+            "ordre": "Mantodea",
+            "famille": "Empusidae",
+            "genre": "Empusa"
+        },
+        "etymologie": {
+            "genre": {
+                "origine": "Du grec ancien Ἔμπουσα (Émpousa), être mythologique grec de nature obscure, parfois interprété par étymologie populaire comme composé de ἐν (en, un) et πούς (pous, pied) signifiant « qui se déplace sur un pied »",
+                "signification": "Référence à Empusa, créature métamorphe de la mythologie grecque, servante de la déesse Hécate, réputée pour son apparence étrange avec une jambe de bronze et une jambe d'âne. Le nom évoque l'aspect inhabituel et fantastique de ces mantes avec leur protubérance céphalique distinctive."
+            },
+            "espece": {
+                "origine": "Du latin pennātus, dérivé de penna signifiant « plume » ou « aile », du proto-italique *petnā, issu du proto-indo-européen *péth₂r̥ ~ pth₂én- (plume, aile)",
+                "signification": "Signifie « plumeux » ou « pourvu de plumes », en référence directe aux antennes plumeuses et pectinées caractéristiques des mâles de cette espèce, qui ressemblent à des plumes d'oiseau."
+            }
+        },
+        "noms_internationaux": {
+            "francais": {
+                "principal": "Empuse Pennée",
+                "synonyme": "Diablotin, Empuse commune, Mante-empuse"
+            },
+            "anglais": "Conehead Mantis",
+            "espagnol": {
+                "standard": "Mantis palo",
+                "colombie": "Nom non documenté",
+                "equateur": "Nom non documenté",
+                "regionaux": "Empusa, Mantis de cabeza cónica"
+            },
+            "allemand": "Kegelkopf-Mantis",
+            "turc": "Konik başlı peygamberdevesi",
+            "arabe": {
+                "nom": "فرس النبي مخروطي الرأس / عنقص ريشي"
+            },
+            "japonais": {
+                "nom": "エムプーサ・ペナータ",
+                "romaji": "Empūsa penāta"
+            }
+        },
+        "mensurations": {
+            "male": {
+                "longueur": {
+                    "min": 4.5,
+                    "max": 6.5,
+                    "unite": "cm"
+                },
+                "masse": {
+                    "min": 0.5,
+                    "max": 1.2,
+                    "unite": "g"
+                }
+            },
+            "femelle": {
+                "longueur": {
+                    "min": 5.5,
+                    "max": 7.5,
+                    "unite": "cm"
+                },
+                "masse": {
+                    "min": 0.8,
+                    "max": 2,
+                    "unite": "g"
+                }
+            }
+        },
+        "description": {
+            "male": [
+                "Corps très allongé et mince, optimisé pour le vol grâce à des ailes bien développées.",
+                "Tête surmontée d'une protubérance conique distinctive, lui donnant un profil unique.",
+                "Antennes pectinées spectaculaires, en forme de plumes, organe sensoriel ultra-développé pour la détection des phéromones.",
+                "Coloration cryptique variable (vert, brun, beige, rose) pour un camouflage parfait dans la végétation méditerranéenne.",
+                "Pattes munies d'extensions foliées qui brisent la silhouette de l'insecte, renforçant son mimétisme."
+            ],
+            "femelle": [
+                "Corps plus grand et plus robuste que le mâle, avec un abdomen large portant des expansions lobées.",
+                "Protubérance céphalique conique similaire à celle du mâle, mais antennes filiformes et simples.",
+                "Coloration également variable, permettant une homochromie parfaite avec les herbes sèches et les buissons de la garrigue.",
+                "Ailes plus courtes (brachyptère) ne permettant généralement pas un vol soutenu, la rendant moins mobile.",
+                "Pattes ravisseuses fines et élancées, armées d'épines, parfaitement adaptées à la capture d'insectes volants."
+            ]
+        },
+        "biologie": {
+            "alimentation": {
+                "regime": "Carnivore strict, prédateur à l'affût spécialisé dans la chasse d'insectes volants rapides.",
+                "familles_preferees": [
+                    "Diptera (Mouches, moucherons, taons)",
+                    "Hymenoptera (Abeilles, petites guêpes)",
+                    "Lepidoptera (Petits papillons de jour et de nuit)"
+                ],
+                "complement": "Peut opportunément capturer de petits orthoptères (criquets, sauterelles) ou d'autres arthropodes passant à sa portée. Capable de saisir des proies en plein vol grâce à une détente fulgurante.",
+                "role_ecologique": "Régulateur important des populations d'insectes volants dans les écosystèmes méditerranéens. Il sert lui-même de proie à divers oiseaux insectivores, reptiles et araignées, s'intégrant ainsi pleinement dans la chaîne alimentaire."
+            },
+            "comportement": {
+                "social": "Strictement solitaire et territorial. Les individus ne se tolèrent que pour l'accouplement. Les nymphes se dispersent rapidement après l'éclosion pour éviter le cannibalisme, qui est très fréquent.",
+                "habitat_vertical": "Occupe la strate herbacée et arbustive basse à moyenne, généralement entre 20 cm et 1,20 mètre de hauteur, se perchant sur les hautes graminées et les inflorescences.",
+                "locomotion": "Déplacement très lent et saccadé, imitant le balancement d'une tige de plante dans le vent pour rester indétecté. Le mâle est un bon voilier, actif surtout au crépuscule, tandis que la femelle est quasi-terrestre."
+            },
+            "vocalisations": {
+                "description": "Principalement silencieuse, la communication est chimique. Cependant, en cas de menace, elle peut produire des stridulations défensives par frottement de ses élytres contre l'abdomen pour intimider un prédateur.",
+                "portee": "Les stridulations défensives sont audibles à quelques mètres seulement. La communication par phéromones de la femelle peut être détectée par les mâles à plusieurs dizaines de mètres.",
+                "frequence": "Non applicable pour la communication chimique. Fréquence des stridulations non documentée.",
+                "amplification": "Les antennes plumeuses du mâle agissent comme un amplificateur passif, maximisant la surface de contact pour capter les molécules de phéromones."
+            },
+            "reproduction": {
+                "systeme": "Polygamique. Les mâles recherchent activement les femelles en volant au crépuscule, guidés par les phéromones émises par ces dernières.",
+                "parade": "L'approche du mâle est extrêmement prudente pour éviter le cannibalisme sexuel. La parade est discrète, le mâle s'immobilisant longuement avant de bondir sur la femelle pour un accouplement qui peut durer plusieurs heures.",
+                "nidification": "La femelle dépose une oothèque, une capsule d'œufs protectrice, qu'elle colle sur une tige de plante robuste (chardons, graminées) dans un endroit bien exposé au soleil.",
+                "ponte": "Chaque oothèque, de couleur beige et de consistance spongieuse, contient une trentaine d'œufs. Une femelle peut pondre 1 à 3 oothèques au cours de sa vie.",
+                "incubation": "Le développement embryonnaire dure environ 30 à 40 jours en été. L'espèce a la particularité d'hiverner au stade de jeune nymphe, et non au stade d'œuf comme la plupart des mantes.",
+                "soins": "Aucun soin parental. Les nymphes, appelées 'diablotins', sont autonomes dès l'éclosion et se dispersent immédiatement."
+            }
+        },
+        "habitat": {
+            "type": "Milieux xérothermiques méditerranéens : garrigues, maquis dégradés, pelouses sèches, friches ensoleillées et prairies steppiques.",
+            "altitude": {
+                "min": 0,
+                "max": 1500,
+                "unite": "m"
+            },
+            "preferences": "Zones chaudes et sèches avec une mosaïque de végétation herbacée haute et de petits arbustes, offrant à la fois des postes de chasse et un camouflage optimal.",
+            "repartition": {
+                "bioregion": "Bassin méditerranéen occidental et central.",
+                "pays": {
+                    "Espagne": "Très répandue sur la péninsule Ibérique et les Baléares.",
+                    "Portugal": "Présente dans le sud et le centre du pays.",
+                    "France": "Strictement méditerranéenne (Provence, Occitanie) et Corse.",
+                    "Italie": "Italie méridionale, Sicile et Sardaigne.",
+                    "Grèce": "Présente en Grèce continentale et sur certaines îles.",
+                    "Maroc": "Zones côtières et piémonts de l'Atlas.",
+                    "Algérie": "Régions côtières du Tell algérien.",
+                    "Tunisie": "Régions côtières et zones semi-arides du nord.",
+                    "Libye": "Zones côtières de la Cyrénaïque.",
+                    "Égypte": "Observée sur la côte méditerranéenne.",
+                    "Turquie": "Commune sur les côtes sud du pays.",
+                    "Liban": "Présente sur la côte et dans les basses montagnes."
+                }
+            },
+            "mouvements": {
+                "type": "Sédentaire. Les femelles sont très peu mobiles, tandis que les mâles effectuent des vols de dispersion pour trouver des partenaires.",
+                "annee": "Le cycle de vie se déroule entièrement dans le même type d'habitat. Les jeunes nymphes hivernent dans la végétation basse.",
+                "reproduction": "La reproduction a lieu directement dans l'habitat de vie, sans migration ni déplacement spécifique."
+            }
+        },
+        "conservation": {
+            "statut_iucn": "LC",
+            "annee_evaluation": 2020,
+            "population": {
+                "min": 0,
+                "max": 0,
+                "description": "La taille de la population n'est pas quantifiée. L'espèce est considérée comme peu commune et ses populations sont souvent localisées et de faible densité, la rendant difficile à observer malgré son statut de conservation."
+            },
+            "tendance": "Inconnue",
+            "menaces": [
+                {
+                    "titre": "Artificialisation et conversion des habitats",
+                    "description": "La transformation des garrigues et prairies sèches en zones agricoles intensives (vignobles, oliveraies) ou en zones urbaines et touristiques constitue la menace principale. Cette destruction fragmente les populations et réduit drastiquement les territoires de chasse et de reproduction."
+                },
+                {
+                    "titre": "Usage de pesticides",
+                    "description": "L'utilisation massive d'insecticides à large spectre dans les zones agricoles limitrophes élimine ses proies et peut l'empoisonner directement par contact ou ingestion, affectant gravement sa survie et son succès reproducteur."
+                },
+                {
+                    "titre": "Incendies de végétation",
+                    "description": "L'augmentation de la fréquence et de l'intensité des incendies en région méditerranéenne détruit massivement son habitat. Les nymphes hivernantes sont particulièrement vulnérables aux feux qui ravagent la végétation basse où elles s'abritent."
+                }
+            ],
+            "mesures": [
+                "Protection et gestion conservatoire des habitats de garrigue et de maquis, notamment au sein du réseau Natura 2000 et des parcs naturels.",
+                "Promotion de pratiques agricoles extensives (pâturage) et biologiques qui maintiennent des zones de végétation spontanée (haies, bandes enherbées) servant de corridors écologiques.",
+                "Planification territoriale limitant l'urbanisation dans les zones naturelles sensibles et préservant la connectivité entre les habitats.",
+                "Gestion du risque incendie par des actions préventives et le maintien d'une mosaïque d'habitats pour créer des zones refuges.",
+                "Sensibilisation du public et des agriculteurs sur l'importance écologique des mantes comme auxiliaires naturels."
+            ]
+        },
+        "anecdotes": [
+            {
+                "titre": "Un nom issu de la mythologie la plus sombre",
+                "description": "Le nom de genre Empusa fait référence à une créature terrifiante de la mythologie grecque. Empusa était un démon métamorphe, servante de la déesse Hécate. Décrite comme un spectre vampirique capable de se transformer en belle femme pour séduire les voyageurs avant de les dévorer, elle possédait une jambe de bronze et une jambe d'âne. Les premiers naturalistes ont été frappés par l'apparence étrange et presque 'extraterrestre' de cette mante, avec sa protubérance céphalique, lui attribuant ce nom évoquant à la fois son allure fantastique et son comportement de prédateur impitoyable."
+            },
+            {
+                "titre": "Un cycle de vie inversé, secret de son succès méditerranéen",
+                "description": "Contrairement à la plupart des mantes européennes qui passent l'hiver sous forme d'œufs protégés dans une oothèque, l'Empuse pennée a adopté une stratégie unique : elle hiverne au stade de nymphe. Les œufs éclosent en plein été et les jeunes 'diablotins' grandissent durant l'automne. Ils restent actifs pendant les journées ensoleillées de l'hiver méditerranéen, continuant de chasser. Ils atteignent le stade adulte au printemps, pile au moment où l'explosion des populations d'insectes volants leur fournit une abondance de nourriture pour la reproduction. Cette adaptation remarquable est une clé de sa survie dans cet écosystème."
+            },
+            {
+                "titre": "Des antennes-radars pour capter l'amour dans la nuit",
+                "description": "Les extraordinaires antennes plumeuses du mâle ne sont pas un ornement. Il s'agit d'un organe sensoriel surpuissant, un véritable radar chimique. La femelle, discrète, émet la nuit de faibles quantités de phéromones sexuelles. Grâce à la surface de détection immense offerte par ses antennes pectinées, le mâle est capable de capter ces signaux à des centaines de mètres de distance, même par vent faible. Il peut ainsi localiser avec une précision redoutable une partenaire potentielle dans l'immensité de la garrigue, une prouesse vitale pour une espèce vivant à faible densité."
+            },
+            {
+                "titre": "La mitre pointue, une arme défensive insoupçonnée",
+                "description": "La protubérance conique sur la tête de l'Empuse a longtemps fasciné les naturalistes. L'entomologiste français Jean-Henri Fabre, au XIXe siècle, a émis une hypothèse audacieuse : cette 'mitre' servirait d'arme défensive. Il a observé que lorsqu'un insecte menaçant s'approchait trop près, la mante, souvent suspendue la tête en bas, donnait un coup de tête pointu pour repousser l'agresseur. Il a même décrit de jeunes nymphes utilisant cette technique pour se défendre contre des criquets trop gros pour être des proies. Cette coiffe n'est donc pas seulement un ornement mais un outil de dissuasion."
+            },
+            {
+                "titre": "Une mante caméléon aux couleurs de son environnement",
+                "description": "L'Empuse pennée est capable d'arborer une large palette de couleurs, allant du vert vif au brun foncé, en passant par le beige paille, le jaune et même le rose. Cette variation chromatique n'est pas un hasard ; elle lui permet d'adapter sa teinte à son environnement immédiat pour un camouflage parfait. Les individus vivant dans des herbes vertes au printemps seront majoritairement verts, tandis que ceux évoluant dans les graminées séchées de l'été adopteront des teintes paille. Certaines observations rapportent des couleurs rosées ou violacées sur des individus se tenant sur des fleurs de chardon, démontrant une capacité d'homochromie exceptionnelle."
+            },
+            {
+                "titre": "La danse du vent, une stratégie de camouflage dynamique",
+                "description": "Au-delà de sa couleur, l'Empuse pennée pousse le mimétisme à un autre niveau avec une technique de camouflage comportemental. Pour se déplacer sans alerter ses proies ou ses prédateurs, elle adopte un mouvement de balancement lent et rythmé, de gauche à droite. Ce dandinement imite à la perfection une brindille ou une feuille morte oscillant sous l'effet d'une légère brise. Cette 'danse du vent' lui permet de progresser de manière presque invisible, transformant un prédateur en un simple élément du paysage, jusqu'à ce qu'il soit trop tard pour sa victime."
+            }
+        ]
+    },
+    {
+        "id": "vaquita",
+        "category": "animaux-marins",
+        "nom_commun": "Vaquita",
+        "nom_scientifique": "Phocoena sinus",
+        "images": [
+            {
+                "url": "https://oceangeneration.org/wp-content/uploads/2023/07/meet-the-vaquita-the-most-endangered-marine-mammal-1024x604.png"
+            },
+            {
+                "url": "https://cdn.britannica.com/98/244698-050-A4B4CEAD/vaquita-dolphine.jpg"
+            },
+            {
+                "url": "https://th-thumbnailer.cdn-si-edu.com/E97ySEAGlFT7Me0bd3_rk45CY-w=/1026x670/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/5c/f3/5cf3e81a-c3dd-4c55-ad91-c4a7767b0612/phocoena_sinus.jpg"
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cetacea_range_map_Vaquita.PNG"
+            }
+        ],
+        "taxonomie": {
+            "regne": "Animalia",
+            "embranchement": "Chordata",
+            "classe": "Mammalia",
+            "ordre": "Cetacea",
+            "famille": "Phocoenidae",
+            "genre": "Phocoena"
+        },
+        "etymologie": {
+            "genre": {
+                "origine": "Du grec ancien φώκαινα (phōkaina), dérivé de φώκη (phōkē) signifiant phoque",
+                "signification": "Signifie 'marsouin'. Le terme a été utilisé par Aristote pour désigner les marsouins, en référence à leurs caractéristiques physiques rappelant celles des phoques."
+            },
+            "espece": {
+                "origine": "Du latin 'sinus', signifiant 'baie' ou 'golfe'. Le nom a été suggéré par Carl L. Hubbs aux découvreurs de l'espèce, Kenneth S. Norris et William N. McFarland.",
+                "signification": "Fait directement référence à l'habitat exclusif et extrêmement restreint de l'animal dans le golfe de Californie."
+            }
+        },
+        "noms_internationaux": {
+            "francais": {
+                "principal": "Marsouin du golfe de Californie",
+                "synonyme": "Vaquita"
+            },
+            "anglais": "Vaquita",
+            "espagnol": {
+                "standard": "Vaquita",
+                "colombie": "Vaquita marina",
+                "equateur": "Vaquita marina",
+                "regionaux": "Cochito"
+            },
+            "allemand": "Kalifornischer Schweinswal",
+            "turc": "Vaquita yunusu",
+            "arabe": {
+                "nom": "خنزير البحر الصغير / فاكويتا"
+            },
+            "japonais": {
+                "nom": "コガシラネズミイルカ",
+                "romaji": "Kogashira nezumi iruka"
+            }
+        },
+        "mensurations": {
+            "male": {
+                "longueur": {
+                    "min": 135,
+                    "max": 140,
+                    "unite": "cm"
+                },
+                "masse": {
+                    "min": 29000,
+                    "max": 43000,
+                    "unite": "g"
+                }
+            },
+            "femelle": {
+                "longueur": {
+                    "min": 140,
+                    "max": 150,
+                    "unite": "cm"
+                },
+                "masse": {
+                    "min": 34000,
+                    "max": 55000,
+                    "unite": "g"
+                }
+            }
+        },
+        "description": {
+            "male": [
+                "Le plus petit de tous les cétacés, avec un corps trapu et une tête arrondie sans rostre distinct.",
+                "Coloration dorsale gris foncé, s'éclaircissant sur les flancs en un gris pâle, et un ventre blanc argenté avec de longues marques grises.",
+                "Anneaux noirs très distinctifs autour des yeux et taches noires sur les lèvres, formant une ligne fine qui s'étend jusqu'aux nageoires pectorales.",
+                "Nageoire dorsale triangulaire exceptionnellement haute et pointue pour sa taille, plus développée que chez les autres espèces de marsouins."
+            ],
+            "femelle": [
+                "Légèrement plus grande et massive que le mâle, avec une tête proportionnellement plus large, ce qui représente le principal dimorphisme sexuel.",
+                "Même patron de coloration que le mâle, avec un dos gris foncé, des flancs gris pâle et un ventre blanc.",
+                "Possède les mêmes anneaux oculaires noirs et la même nageoire dorsale proéminente que le mâle.",
+                "Ce dimorphisme sexuel avec des femelles plus grandes est une adaptation souvent observée chez les espèces à système reproducteur polygyne."
+            ]
+        },
+        "biologie": {
+            "alimentation": {
+                "regime": "Carnivore généraliste avec une préférence pour les espèces benthiques et démersales.",
+                "familles_preferees": [
+                    "Sciaenidae (Courbines, Tambours et Acoupas)",
+                    "Engraulidae (Anchois)",
+                    "Loliginidae et Ommastrephidae (Calmars)"
+                ],
+                "complement": "Se nourrit également de crustacés (crevettes), de poulpes et d'autres poissons de fond comme Isopisthus altipinnis, exploitant activement les ressources des fonds marins de son habitat.",
+                "role_ecologique": "Prédateur de niveau trophique intermédiaire essentiel à l'équilibre de son écosystème. Il régule les populations de petits poissons et de céphalopodes benthiques dans le golfe de Californie, tout en étant une proie potentielle pour de grands prédateurs comme les requins."
+            },
+            "comportement": {
+                "social": "Comportement extrêmement élusif et discret, évitant systématiquement les embarcations. Il est généralement observé seul ou en petites unités, le plus souvent une paire mère-petit. Contrairement aux dauphins, il ne pratique pas de sauts acrobatiques.",
+                "habitat_vertical": "Espèce côtière qui occupe les eaux peu profondes, généralement entre 10 et 50 mètres de profondeur, restant presque toujours à moins de 25 kilomètres des côtes.",
+                "locomotion": "Sa nage est lente et sa manière de faire surface pour respirer est très discrète, avec un mouvement rapide et roulant qui perturbe à peine la surface de l'eau, le rendant très difficile à repérer."
+            },
+            "vocalisations": {
+                "description": "Utilise principalement des clics à bande étroite et très haute fréquence pour l'écholocation, ce qui lui permet de naviguer et de localiser ses proies dans les eaux turbides de son habitat.",
+                "portee": "Les sons émis sont de courte portée, optimisés pour la détection de proies à proximité immédiate plutôt que pour la communication à longue distance.",
+                "frequence": "Émet dans une gamme de fréquences ultrasoniques, typiquement entre 122 et 150 kHz, bien au-delà de la capacité auditive humaine.",
+                "amplification": "Les sons sont générés dans les voies nasales puis focalisés par le melon, une structure graisseuse sur le front qui agit comme une lentille acoustique pour diriger le faisceau sonore."
+            },
+            "reproduction": {
+                "systeme": "Polygyne, caractérisé par une forte compétition entre les mâles pour l'accès aux femelles. La taille de leurs testicules, représentant près de 3% de leur masse corporelle, témoigne d'une intense compétition spermatique.",
+                "parade": "Les parades nuptiales ne sont pas documentées, mais le système de reproduction est basé sur la compétition mâle-mâle plutôt que sur la séduction.",
+                "nidification": "La mise bas a lieu en eau libre. Les femelles ne recherchent pas de site spécifique mais restent dans les eaux peu profondes et protégées du nord du golfe de Californie.",
+                "ponte": "Donne naissance à un seul petit, mesurant environ 75 cm et pesant 7 kg. Des observations récentes suggèrent que la reproduction pourrait être annuelle, et non bisannuelle comme on le pensait initialement.",
+                "incubation": "La période de gestation dure entre 10 et 11 mois, avec une saison des naissances synchronisée qui culmine entre février et avril.",
+                "soins": "Le petit est allaité par sa mère pendant 6 à 8 mois. Les soins parentaux sont exclusivement assurés par la femelle jusqu'à ce que le jeune devienne indépendant."
+            }
+        },
+        "habitat": {
+            "type": "Eaux côtières peu profondes, turbides et riches en nutriments, avec des fonds sableux et vaseux. Tolère des variations de température extrêmes, de 14°C à 36°C.",
+            "altitude": {
+                "min": -50,
+                "max": -1,
+                "unite": "m"
+            },
+            "preferences": "Son habitat vital est désormais concentré dans une 'Zone de Tolérance Zéro' de 288 km² près de San Felipe, avec une préférence marquée pour les eaux de moins de 30 mètres de profondeur.",
+            "repartition": {
+                "bioregion": "Endémique strict de l'écorégion marine du nord du golfe de Californie (Mexique).",
+                "pays": {
+                    "Mexique": "Possède l'aire de répartition la plus restreinte de tous les cétacés. Historiquement de 4000 km², elle est aujourd'hui réduite à une zone protégée de moins de 300 km², principalement dans la Réserve de biosphère du Alto Golfo de California y Delta del Río Colorado."
+                }
+            },
+            "mouvements": {
+                "type": "Sédentaire et non migratoire.",
+                "annee": "L'espèce réside toute l'année dans son aire de répartition extrêmement limitée, sans observer de migration saisonnière.",
+                "reproduction": "La reproduction et la mise bas ont lieu dans le même habitat, les femelles restant dans les zones côtières les plus protégées."
+            }
+        },
+        "conservation": {
+            "statut_iucn": "CR",
+            "annee_evaluation": 2024,
+            "population": {
+                "min": 6,
+                "max": 11,
+                "description": "Individus matures estimés. Le recensement de mai 2024 a observé entre 6 et 8 individus. Des détections acoustiques en août-septembre 2024 ont confirmé leur présence à la fois dans la zone protégée et dans d'autres parties de leur ancienne aire de répartition."
+            },
+            "tendance": "Décroissante",
+            "menaces": [
+                {
+                    "titre": "Prise accessoire dans les filets maillants pour la pêche du Totoaba",
+                    "description": "La cause principale et quasi unique de sa quasi-extinction. Les vaquitas se noient dans des filets maillants illégaux posés pour le totoaba, un poisson dont la vessie natatoire est vendue jusqu'à 20 000 dollars le kilo sur le marché noir asiatique. Ce commerce, plus lucratif que la cocaïne, est contrôlé par les cartels et rend les filets mortels pour le vaquita, de taille similaire."
+                },
+                {
+                    "titre": "Pêche à la crevette et dégradation de l'habitat",
+                    "description": "Historiquement, la pêche légale à la crevette avec des filets maillants, principalement pour le marché américain, a causé le déclin initial de la population. De plus, la réduction drastique du débit du fleuve Colorado due aux barrages a modifié l'écosystème, affectant la chaîne alimentaire, tandis que la pollution par les pesticides agricoles contamine son habitat."
+                },
+                {
+                    "titre": "Faible diversité génétique et vulnérabilité",
+                    "description": "Avec une population si faible, la consanguinité est une menace. Bien que des études montrent que l'espèce a survécu à un goulot d'étranglement naturel par le passé, sa résilience actuelle est très faible. Toute maladie ou changement environnemental soudain pourrait anéantir les individus restants, qui manquent de la variation génétique nécessaire pour s'adapter."
+                }
+            ],
+            "mesures": [
+                "Déploiement de blocs de béton équipés de grands crochets métalliques dans la zone protégée pour enchevêtrer et détruire les filets maillants illégaux, une mesure qui a réduit de 90% la pêche au filet dans cette zone.",
+                "Surveillance intensive par la marine mexicaine et des organisations comme Sea Shepherd, utilisant des navires, des drones et des technologies de détection acoustique passive pour suivre les vaquitas et intercepter les pêcheurs illégaux.",
+                "Application de l'interdiction totale et permanente des filets maillants dans toute l'aire de répartition du vaquita, avec des efforts de coopération internationale pour démanteler les réseaux de trafic de totoaba.",
+                "Programmes de développement de techniques de pêche alternatives et sans danger pour les vaquitas afin d'offrir des sources de revenus durables aux communautés de pêcheurs locales et de réduire la pression économique qui pousse à l'illégalité.",
+                "Biobanque du matériel génétique de l'espèce, initiée par des organisations de conservation, pour préserver sa diversité génétique et conserver une option de restauration future si l'espèce venait à s'éteindre à l'état sauvage."
+            ]
+        },
+        "anecdotes": [
+            {
+                "titre": "Découvert par la science seulement en 1958",
+                "description": "Le plus petit cétacé du monde est resté inconnu de la science pendant une grande partie du 20e siècle. Il n'a été officiellement décrit qu'en 1958, à partir de trois crânes trouvés sur une plage. Il a fallu attendre 1985 pour que des spécimens frais permettent de décrire son apparence complète. Ce retard s'explique par son comportement extrêmement discret, sa petite taille et son aire de répartition très limitée. Moins d'un siècle après sa découverte, l'humanité est sur le point de le perdre à jamais."
+            },
+            {
+                "titre": "Le 'Panda des mers', victime d'un marché noir",
+                "description": "Surnommée le 'Panda des mers' en raison des anneaux noirs distinctifs qui entourent ses yeux, la vaquita est la victime collatérale d'un commerce illégal international. Son déclin est directement lié à la pêche du totoaba, dont la vessie natatoire est considérée à tort comme un mets de luxe et un remède miracle en médecine traditionnelle chinoise. Ce trafic, contrôlé par des cartels criminels, a transformé la lutte pour la survie de la vaquita en un combat contre le crime organisé transfrontalier."
+            },
+            {
+                "titre": "Une génétique faible mais un espoir de survie",
+                "description": "Des analyses génomiques publiées en 2022 ont révélé que, bien que la vaquita ait une très faible diversité génétique, elle n'est pas condamnée. L'espèce a survécu à un goulot d'étranglement démographique naturel il y a des milliers d'années, ce qui a permis de 'purger' de nombreuses mutations génétiques nuisibles. Les scientifiques ont conclu que si la mortalité par les filets est totalement stoppée, l'espèce a une chance de se rétablir, réfutant l'idée que sa consanguinité la condamnait inévitablement."
+            },
+            {
+                "titre": "L'échec tragique de la tentative de sauvetage en captivité",
+                "description": "En 2017, une mission de la dernière chance, VaquitaCPR, a tenté de capturer quelques individus pour démarrer un programme de reproduction en sanctuaire. L'opération a tourné au drame : une femelle adulte capturée est décédée rapidement à cause du stress intense, malgré les efforts des meilleurs vétérinaires mondiaux. Cette perte a mis fin au programme, prouvant que le vaquita ne pouvait survivre en captivité. Cependant, les cellules prélevées sur cette femelle ont permis de séquencer son génome et de fournir des données cruciales pour sa conservation."
+            },
+            {
+                "titre": "Des crochets en béton pour arracher les 'murs de la mort'",
+                "description": "Face à l'inefficacité des patrouilles, une stratégie innovante et agressive a été mise en place depuis 2022. La marine mexicaine a commencé à couler de grands blocs de béton surmontés de crochets d'acier dans la zone de protection. Ces structures agissent comme des 'attrape-filets', s'accrochant aux filets maillants illégaux et les détruisant. Cette méthode a réduit de manière spectaculaire la présence de ces 'murs de la mort' dans le sanctuaire du vaquita, offrant un répit vital aux derniers survivants."
+            },
+            {
+                "titre": "Une tolérance unique à la chaleur parmi les marsouins",
+                "description": "La vaquita est une exception physiologique. Alors que tous les autres marsouins vivent dans des eaux froides (moins de 20°C), elle est la seule à prospérer dans les eaux chaudes du golfe de Californie, supportant des températures estivales allant jusqu'à 36°C. Les scientifiques pensent que sa nageoire dorsale, exceptionnellement grande par rapport à sa taille, agit comme un radiateur pour l'aider à dissiper la chaleur corporelle. Cette adaptation unique est le résultat de son évolution isolée dans cet environnement particulier."
+            }
+        ]
+    },
+    {
+        "id": "podarge-gris",
+        "category": "oiseaux",
+        "nom_commun": "Podarge gris",
+        "nom_scientifique": "Podargus strigoides",
+        "images": [
+            {
+                "url": "https://cdn.download.ams.birds.cornell.edu/api/v2/asset/121533111/2400"
+            },
+            {
+                "url": "https://cdn.download.ams.birds.cornell.edu/api/v2/asset/121533091/2400"
+            },
+            {
+                "url": "https://cdn.download.ams.birds.cornell.edu/api/v2/asset/121533121/2400"
+            },
+            {
+                "url": "https://cdn.download.ams.birds.cornell.edu/api/v2/asset/121533101/2400"
+            }
+        ],
+        "taxonomie": {
+            "regne": "Animalia",
+            "embranchement": "Chordata",
+            "classe": "Aves",
+            "ordre": "Podargiformes",
+            "famille": "Podargidae",
+            "genre": "Podargus"
+        },
+        "etymologie": {
+            "genre": {
+                "origine": "Du grec ancien πούς, ποδός (pous, podós) signifiant 'pied' et ἀργός (argós) signifiant 'paresseux, inactif'",
+                "signification": "Fait référence aux petites pattes et aux pieds faibles de cet oiseau, qui ne sont pas utilisés pour la chasse et lui donnent une démarche maladroite, comparée à celle d'un homme souffrant de la goutte."
+            },
+            "espece": {
+                "origine": "Du latin 'strix' signifiant 'hibou, chouette' et du suffixe grec -oides (εἶδος) signifiant 'forme, ressemblance'",
+                "signification": "Signifie littéralement 'ressemblant à un hibou', en raison de son apparence générale, de ses grands yeux et de ses mœurs nocturnes, bien qu'il ne soit pas un rapace."
+            }
+        },
+        "noms_internationaux": {
+            "francais": {
+                "principal": "Podarge gris",
+                "synonyme": "Bouche-de-grenouille fauve, Podarge de Latham"
+            },
+            "anglais": "Tawny Frogmouth",
+            "espagnol": {
+                "standard": "Podargo australiano",
+                "colombie": "Podargo Castaño",
+                "equateur": "Podargo Castaño",
+                "regionaux": "Boca-de-sapo-australiano"
+            },
+            "allemand": "Eulenschwalm",
+            "turc": "Kahverengi kurbağaağız",
+            "arabe": {
+                "nom": "بودارغوس أسمر / فم الضفدع الأسمر"
+            },
+            "japonais": {
+                "nom": "オーストラリアガマグチヨタカ",
+                "romaji": "Ōsutoraria gamaguchi yotaka"
+            }
+        },
+        "mensurations": {
+            "male": {
+                "longueur": {
+                    "min": 34,
+                    "max": 53,
+                    "unite": "cm"
+                },
+                "envergure": {
+                    "min": 64,
+                    "max": 97,
+                    "unite": "cm"
+                },
+                "masse": {
+                    "min": 178,
+                    "max": 680,
+                    "unite": "g"
+                }
+            },
+            "femelle": {
+                "longueur": {
+                    "min": 34,
+                    "max": 53,
+                    "unite": "cm"
+                },
+                "envergure": {
+                    "min": 64,
+                    "max": 97,
+                    "unite": "cm"
+                },
+                "masse": {
+                    "min": 157,
+                    "max": 680,
+                    "unite": "g"
+                }
+            }
+        },
+        "description": {
+            "male": [
+                "Plumage cryptique gris argenté, finement strié et marbré de noir et blanc, offrant un camouflage parfait sur l'écorce des arbres.",
+                "Tête massive avec un bec large, aplati et triangulaire, de couleur gris-olive, surmonté de vibrisses (plumes sétiformes) raides protégeant le visage.",
+                "Grands yeux jaunes à orange, adaptés à la vision nocturne et positionnés latéralement, contrairement aux yeux frontaux des hiboux.",
+                "Silhouette trapue avec des ailes arrondies aux bords frangés permettant un vol silencieux, et une queue longue et barrée de fines bandes sombres.",
+                "Pattes courtes et pieds faibles, inadaptés à la saisie de proies, servant principalement au perchage."
+            ],
+            "femelle": [
+                "Très similaire au mâle, mais présente souvent des nuances plus rousses ou châtains dans son plumage.",
+                "Une morphe de couleur entièrement rousse existe et est observée exclusivement chez les femelles.",
+                "Généralement de taille et de masse légèrement inférieures à celles du mâle, bien que les mesures se chevauchent largement.",
+                "Même capacité de camouflage exceptionnelle, avec des motifs de plumage complexes imitant l'écorce fracturée."
+            ]
+        },
+        "biologie": {
+            "alimentation": {
+                "regime": "Carnivore et principalement insectivore, chassant par affût depuis un perchoir bas.",
+                "familles_preferees": [
+                    "Lépidoptères (Lepidoptera) - Papillons de nuit et phalènes",
+                    "Coléoptères (Coleoptera) - Scarabées, blattes et autres coléoptères nocturnes",
+                    "Arachnides (Araneae) et Myriapodes (Myriapoda) - Araignées, scorpions, mille-pattes"
+                ],
+                "complement": "Consomme de manière opportuniste une grande variété d'invertébrés (limaces, vers, criquets) et de petits vertébrés (souris, grenouilles, lézards, petits oiseaux). Les proies sont tuées en étant frappées contre une branche avant d'être avalées.",
+                "role_ecologique": "Régulateur naturel majeur des populations d'insectes nocturnes, considéré comme l'un des oiseaux de lutte antiparasitaire les plus efficaces d'Australie. Participe au contrôle des rongeurs dans les zones suburbaines."
+            },
+            "comportement": {
+                "social": "Strictement monogame et territorial, formant des couples pour la vie qui peuvent durer plus d'une décennie. Les partenaires passent la journée perchés en contact physique étroit et se toilettent mutuellement lors de longues séances.",
+                "habitat_vertical": "Arboricole, se perche entre 2 et 10 mètres de hauteur sur des branches horizontales pour le repos diurne. Chasse la nuit depuis des perchoirs bas, se laissant tomber sur des proies au sol.",
+                "locomotion": "Vol silencieux grâce aux bords frangés de ses plumes, mais peu agile. Préfère les vols courts. Sa démarche au sol est maladroite en raison de ses pattes faibles."
+            },
+            "vocalisations": {
+                "description": "Le cri principal est une série de 'oom-oom-oom' graves, profonds et résonnants, émis la nuit. En cas de menace, il produit un sifflement fort et un claquement de bec. Un appel de détresse, décrit comme un gémissement déchirant, a aussi été observé.",
+                "portee": "Audible jusqu'à 1 km par temps calme, permettant la communication territoriale.",
+                "frequence": "Vocalisations de très basse fréquence, optimisées pour la propagation dans les environnements forestiers nocturnes.",
+                "amplification": "La large cavité buccale agit comme un résonateur pour les sons graves. Lors des parades de menace, l'intérieur jaune vif de la bouche est exposé pour intimider les intrus."
+            },
+            "reproduction": {
+                "systeme": "Monogamie stricte à vie avec une fidélité absolue au partenaire et au territoire.",
+                "parade": "Parades discrètes, principalement basées sur un toilettage mutuel prolongé et un perchage en contact étroit pour renforcer le lien du couple tout au long de l'année.",
+                "nidification": "Nid extrêmement rudimentaire, consistant en une simple plateforme de brindilles et de feuilles entassées sur une branche fourchue. Le nid est si fragile que les œufs sont parfois visibles à travers et peuvent tomber.",
+                "ponte": "1 à 3 œufs blancs, brillants et ovales, déposés sur un lit de feuilles vertes fraîches.",
+                "incubation": "Dure environ 30 jours, avec un partage strict des tâches : le mâle couve le jour, parfaitement camouflé, tandis que les deux parents se relaient la nuit.",
+                "soins": "Les deux parents nourrissent les poussins. Les jeunes quittent le nid après 25-35 jours mais restent dépendants et perchés avec leurs parents pendant plusieurs mois."
+            }
+        },
+        "habitat": {
+            "type": "Très adaptable, on le trouve dans les forêts d'eucalyptus, les boisements ouverts, les savanes arborées, les zones riveraines, ainsi que les parcs et jardins suburbains.",
+            "altitude": {
+                "min": 0,
+                "max": 1500,
+                "unite": "m"
+            },
+            "preferences": "Forte préférence pour les arbres matures à écorce rugueuse (type 'stringybark') qui offrent un camouflage optimal. Recherche activement les branches mortes et cassées pour le perchage diurne.",
+            "repartition": {
+                "bioregion": "Endémique de la biorégion Australasienne.",
+                "pays": {
+                    "Australie": "Très répandu sur tout le continent, à l'exception des déserts les plus arides. Trois sous-espèces sont reconnues, couvrant respectivement le nord, l'ouest/centre et l'est du pays.",
+                    "Tasmanie": "Commun dans les habitats boisés du nord et de l'est de l'île.",
+                    "Papouasie-Nouvelle-Guinée": "Une présence marginale est rapportée dans le sud de la Nouvelle-Guinée."
+                }
+            },
+            "mouvements": {
+                "type": "Strictement sédentaire avec une très forte fidélité au territoire.",
+                "annee": "Les couples occupent le même territoire, souvent inférieur à un kilomètre carré, tout au long de l'année et pendant toute leur vie.",
+                "reproduction": "Le site de reproduction est identique au territoire annuel; les couples réutilisent souvent le même arbre pour nicher pendant plus de 10 ans."
+            }
+        },
+        "conservation": {
+            "statut_iucn": "LC",
+            "annee_evaluation": 2024,
+            "population": {
+                "min": 0,
+                "max": 0,
+                "description": "La population mondiale n'a pas été quantifiée, mais l'espèce est décrite comme commune sur sa très large aire de répartition."
+            },
+            "tendance": "Stable",
+            "menaces": [
+                {
+                    "titre": "Collisions routières nocturnes",
+                    "description": "C'est l'une des principales causes de mortalité. Les podarges chassent les insectes attirés par les phares et, en raison de leur vol lent, sont fréquemment heurtés par les véhicules, ce qui a un impact significatif sur les populations locales fidèles à leur territoire."
+                },
+                {
+                    "titre": "Empoisonnement secondaire par les pesticides",
+                    "description": "L'ingestion d'insectes ou de rongeurs contaminés par des pesticides et des rodenticides, particulièrement dans les zones suburbaines, cause une mortalité différée mais importante. Certains produits ont été interdits en partie à cause de leur impact sur les podarges."
+                },
+                {
+                    "titre": "Perte d'arbres matures et fragmentation de l'habitat",
+                    "description": "La déforestation, l'urbanisation et les feux de brousse intenses détruisent les arbres anciens essentiels au camouflage et à la nidification. Les podarges montrent un attachement si fort à leur territoire qu'ils restent parfois sur place même après sa destruction complète."
+                }
+            ],
+            "mesures": [
+                "Protection légale de l'espèce sur tout le territoire australien.",
+                "Conservation des arbres matures dans les projets d'urbanisme et restauration d'habitats avec des essences d'eucalyptus indigènes.",
+                "Campagnes de sensibilisation pour réduire la vitesse de conduite la nuit dans les zones boisées et installation de panneaux d'avertissement.",
+                "Promotion de méthodes alternatives de lutte antiparasitaire pour réduire l'empoisonnement secondaire et réglementation plus stricte des produits toxiques."
+            ]
+        },
+        "anecdotes": [
+            {
+                "titre": "Maître de la posture 'branche cassée'",
+                "description": "Le camouflage du podarge est comportemental autant que physique. Il choisit une branche dont l'angle et la texture correspondent à son plumage, puis se fige dans une posture d'une immobilité absolue, le bec pointé vers le ciel, ressemblant à s'y méprendre à un moignon d'arbre. Cette technique, appelée crypsis, est si parfaite que l'oiseau ne rompt sa posture que si un prédateur s'approche à moins d'un mètre, moment où il ouvre son énorme bouche jaune dans un display de menace spectaculaire."
+            },
+            {
+                "titre": "Un grand oiseau capable d'entrer en torpeur",
+                "description": "Le podarge est l'un des seuls oiseaux de sa taille capable d'entrer en torpeur, un état similaire à une mini-hibernation. Durant les nuits d'hiver froides où les insectes se font rares, il peut abaisser sa température corporelle de plusieurs degrés et ralentir son métabolisme pour économiser de l'énergie, une adaptation remarquable habituellement réservée à de bien plus petites créatures comme les colibris."
+            },
+            {
+                "titre": "Des liens de couple si forts qu'ils connaissent le deuil",
+                "description": "Les podarges forment des couples unis pour la vie, maintenant un contact physique constant. Des comportements suggérant un deuil ont été observés par des experts. Un mâle dont la partenaire a été tuée sur une route a été retrouvé près du corps, émettant un appel de gémissement déchirant pendant quatre jours et quatre nuits, refusant de se nourrir. Ce comportement remet en question notre compréhension des capacités émotionnelles des oiseaux."
+            },
+            {
+                "titre": "Architecte incompétent, mais parent dévoué",
+                "description": "Considéré comme l'un des pires constructeurs de nids d'Australie, le podarge se contente de jeter quelques brindilles en vrac sur une branche. Cette plateforme est si précaire que les œufs tombent souvent. Cependant, cette apparente négligence est compensée par un dévouement parental extrême, les deux parents assurant une surveillance et une incubation constantes pour surmonter les défauts de leur architecture."
+            },
+            {
+                "titre": "Défense par projection fécale",
+                "description": "Lorsque le camouflage ne suffit plus et qu'un prédateur comme un serpent ou un varan menace le nid, le podarge a une arme secrète et peu ragoûtante. Il projette délibérément ses fientes sur l'intrus. L'odeur nauséabonde et persistante peut complètement désorienter les prédateurs qui chassent à l'odorat, masquant l'odeur des oisillons et offrant une protection chimique étonnamment efficace."
+            },
+            {
+                "titre": "Un favori des Australiens, presque 'Oiseau de l'Année'",
+                "description": "Le podarge gris est immensément populaire en Australie, ayant terminé deuxième au prestigieux sondage de l'Oiseau de l'Année. Son apparence comique, sa présence discrète dans les jardins et son rôle de prédateur d'insectes nuisibles lui ont valu l'affection du public. Cette popularité a aidé à catalyser des efforts de conservation communautaires pour protéger son habitat, notamment en milieu urbain."
+            }
+        ]
+    },
+    {
+        "id": "engoulevent-oreillard",
+        "category": "oiseaux",
+        "nom_commun": "Engoulevent oreillard",
+        "nom_scientifique": "Lyncornis macrotis",
+        "images": [
+            {
+                "url": "https://cdn.download.ams.birds.cornell.edu/api/v2/asset/387590541/2400"
+            },
+            {
+                "url": "https://cdn.download.ams.birds.cornell.edu/api/v2/asset/617495074/2400"
+            },
+            {
+                "url": "https://cdn.download.ams.birds.cornell.edu/api/v2/asset/362580621/2400"
+            },
+            {
+                "url": "https://cdn.download.ams.birds.cornell.edu/api/v2/asset/396800411/2400"
+            }
+        ],
+        "taxonomie": {
+            "regne": "Animalia",
+            "embranchement": "Chordata",
+            "classe": "Aves",
+            "ordre": "Caprimulgiformes",
+            "famille": "Caprimulgidae",
+            "genre": "Lyncornis"
+        },
+        "etymologie": {
+            "genre": {
+                "origine": "Du grec ancien λύγξ (lynx, lunkos) signifiant 'lynx' et ὄρνις (ornis) signifiant 'oiseau'. Le genre a été créé en 1838 par l'ornithologue anglais John Gould.",
+                "signification": "Littéralement 'oiseau-lynx', en référence aux touffes auriculaires proéminentes de l'espèce qui rappellent les oreilles touffues du lynx félin."
+            },
+            "espece": {
+                "origine": "Du grec ancien μακρός (makros) signifiant 'long' et οὖς, ὠτός (ous, otos) signifiant 'oreille', formant μακρώτης (makrōtēs) signifiant 'à longues oreilles'. Décrit en 1831 par le zoologiste irlandais Nicholas Aylward Vigors.",
+                "signification": "Se réfère aux remarquables touffes de plumes auriculaires qui sont la caractéristique morphologique la plus distinctive de cette espèce parmi les engoulevents."
+            }
+        },
+        "noms_internationaux": {
+            "francais": {
+                "principal": "Engoulevent oreillard",
+                "synonyme": "Grand Engoulevent à aigrettes"
+            },
+            "anglais": "Great Eared Nightjar",
+            "espagnol": {
+                "standard": "Chotacabras Orejudo",
+                "colombie": "Chotacabra Orejuda Grande",
+                "equateur": "Chotacabras Orejudo",
+                "regionaux": "Atajacaminos Orejudo"
+            },
+            "allemand": "Riesennachtschwalbe",
+            "turc": "Büyük Kulaklı Çobanaldatan",
+            "arabe": {
+                "nom": "السَبَد كبير الأذنين"
+            },
+            "japonais": {
+                "nom": "オオミミヨタカ",
+                "romaji": "Oomimiyotaka"
+            }
+        },
+        "mensurations": {
+            "male": {
+                "longueur": {
+                    "min": 31,
+                    "max": 41,
+                    "unite": "cm"
+                },
+                "masse": {
+                    "min": 120,
+                    "max": 140,
+                    "unite": "g"
+                },
+                "envergure": {
+                    "min": 70,
+                    "max": 80,
+                    "unite": "cm"
+                }
+            },
+            "femelle": {
+                "longueur": {
+                    "min": 31,
+                    "max": 41,
+                    "unite": "cm"
+                },
+                "masse": {
+                    "min": 140,
+                    "max": 160,
+                    "unite": "g"
+                },
+                "envergure": {
+                    "min": 70,
+                    "max": 80,
+                    "unite": "cm"
+                }
+            }
+        },
+        "description": {
+            "male": [
+                "Touffes auriculaires spectaculaires de plumes allongées pouvant être dressées ou couchées, donnant l'apparence féline caractéristique qui inspire le surnom de 'dragon oiseau'.",
+                "Plumage cryptique composé de teintes brunes, grises et noires fortement tachetées et striées, créant un camouflage exceptionnel contre l'écorce et la litière forestière.",
+                "Bande blanche distinctive à la gorge contrastant avec le plumage sombre, absence totale de blanc sur les ailes et la queue qui sont finement barrées de motifs complexes.",
+                "Grands yeux noirs proéminents adaptés à la vision nocturne avec tapetum lucidum réfléchissant, bec court mais bouche pouvant s'ouvrir jusqu'à 120 degrés pour capturer les insectes en vol.",
+                "Longues ailes pointues et queue allongée permettant des manœuvres acrobatiques aériennes, posture souvent dressée distinguant l'espèce des autres engoulevents."
+            ],
+            "femelle": [
+                "Plumage identique au mâle avec les mêmes touffes auriculaires caractéristiques et le même patron de coloration cryptique brun-gris moucheté.",
+                "Légèrement plus lourde que le mâle avec une masse corporelle moyenne de 151 grammes, faisant de cette espèce la deuxième plus lourde de la famille après l'engoulevent nacunda.",
+                "Bande blanche gulaire et absence de blanc sur les ailes et la queue comme chez le mâle, grands yeux noirs avec capacité de vision nocturne identique.",
+                "Même morphologie générale avec longues ailes barrées et queue allongée, impossible de distinguer visuellement des mâles sur le terrain en dehors du contexte reproducteur."
+            ]
+        },
+        "biologie": {
+            "alimentation": {
+                "regime": "Insectivore aérien strict, chasseur crépusculaire et nocturne spécialisé dans la capture d'insectes volants en plein vol.",
+                "familles_preferees": [
+                    "Lépidoptères nocturnes (Famille Noctuidae, Sphingidae et Geometridae - papillons de nuit et sphinx)",
+                    "Coléoptères volants (Familles Scarabaeidae et Cerambycidae - scarabées et longicornes)",
+                    "Diptères de grande taille (Famille Tipulidae - tipules et cousins)"
+                ],
+                "complement": "Autres insectes volants opportunistes incluant des éphémères, des trichoptères, des névroptères et occasionnellement des termites ailés lors des essaimages. Peut également capturer des cigales volant au crépuscule.",
+                "role_ecologique": "Régulateur majeur des populations d'insectes nocturnes dans les écosystèmes forestiers tropicaux, contribuant au contrôle biologique naturel des ravageurs forestiers et agricoles. Peut consommer plusieurs centaines d'insectes par nuit."
+            },
+            "comportement": {
+                "social": "Espèce principalement solitaire et territoriale. Pendant la reproduction, les couples maintiennent un lien monogame saisonnier. Comportement cryptique durant le jour, restant immobile au sol ou sur une branche basse pendant 8 à 10 heures.",
+                "habitat_vertical": "Occupe principalement la strate inférieure de la forêt durant le repos diurne (sol ou branches basses <3m). Lors de la chasse nocturne, exploite activement la canopée moyenne et supérieure entre 10 et 30 mètres.",
+                "locomotion": "Vol extrêmement silencieux grâce à des plumes modifiées. Capacité de vol stationnaire bref et de manœuvres acrobatiques. Déplacement au sol par petits bonds successifs."
+            },
+            "vocalisations": {
+                "description": "Vocalisation distinctive en deux parties : un premier 'tsiik' aigu et bref, suivi d'une pause, puis un sifflement bisyllabique descendant 'ba-haaww', aux tonalités mélancoliques.",
+                "portee": "Portée acoustique d'environ 800 mètres à 1 kilomètre, pouvant atteindre 1,5 km dans les vallées montagneuses grâce aux effets d'écho.",
+                "frequence": "Fréquence fondamentale du premier élément autour de 2,8-3,5 kHz, le second balayant de 2,2 à 1,6 kHz. Harmoniques supérieures présentes jusqu'à 7 kHz.",
+                "amplification": "Pas de mécanisme spécialisé. La bouche large et la cavité buccale servent de résonateur naturel. Le positionnement en hauteur lors du chant maximise la propagation."
+            },
+            "reproduction": {
+                "systeme": "Système monogame saisonnier avec fidélité au partenaire durant une saison. Certains couples peuvent se reformer sur plusieurs années.",
+                "parade": "Parade nuptiale élaborée au crépuscule. Le mâle effectue des vols d'exhibition acrobatiques, exhibe ses touffes auriculaires et peut présenter des proies à la femelle comme offrande.",
+                "nidification": "Aucune construction de nid. L'œuf est pondu dans une simple dépression grattée dans la litière de feuilles au sol, généralement sous un couvert végétal dense.",
+                "ponte": "Ponte d'un unique œuf par couvée, de couleur chamois clair à crème avec des mouchetures brun-gris. Dimensions approximatives de 32-36 mm x 24-26 mm.",
+                "incubation": "Durée de 28 à 30 jours avec partage strict : la femelle incube le jour (6h-18h), le mâle la nuit (18h-6h), permettant à la femelle de chasser.",
+                "soins": "Soins biparentaux intensifs. Le poussin, couvert d'un duvet cryptique, est nourri par régurgitation. Les parents simulent une blessure pour détourner les prédateurs. Le jeune effectue ses premiers vols vers 40-45 jours."
+            }
+        },
+        "habitat": {
+            "type": "Forêts tropicales et subtropicales humides de plaine et de moyenne montagne, incluant forêts primaires, secondaires matures et forêts de mousson.",
+            "altitude": {
+                "min": 0,
+                "max": 2200,
+                "unite": "m"
+            },
+            "preferences": "Privilégie les secteurs forestiers humides (précipitations >1500 mm/an) avec des trouées dans la canopée pour la chasse. Recherche des sites de repos au sol avec une litière de feuilles épaisse et un ombrage dense.",
+            "repartition": {
+                "bioregion": "Écorégion indo-malaise (Ghâts occidentaux, forêts indo-birmanes, Sundaland et Philippines).",
+                "pays": {
+                    "Inde et Sri Lanka": "Présent dans les Ghâts occidentaux en Inde et dans les zones forestières humides du Sri Lanka.",
+                    "Asie du Sud-Est continentale": "Largement distribué au Myanmar, Thaïlande, Laos, Cambodge, Vietnam et sud de la Chine (Yunnan).",
+                    "Malaisie et Indonésie": "Présent dans la péninsule malaise et sur les îles de Sumatra, Java, Bornéo, et Sulawesi.",
+                    "Philippines": "Distribution étendue sur la plupart des grandes îles comme Luzon, Mindoro, et Mindanao."
+                }
+            },
+            "mouvements": {
+                "type": "Espèce principalement sédentaire. Certaines populations montagnardes peuvent effectuer de courts mouvements altitudinaux saisonniers.",
+                "annee": "Maintient son territoire forestier toute l'année, avec une fidélité marquée aux sites de repos diurnes.",
+                "reproduction": "La reproduction coïncide avec le pic d'abondance des insectes, généralement durant la saison des pluies. Pas de migration vers des habitats spécifiques."
+            }
+        },
+        "conservation": {
+            "statut_iucn": "LC",
+            "annee_evaluation": 2024,
+            "population": {
+                "min": 0,
+                "max": 0,
+                "description": "La taille globale de la population n'a pas été quantifiée précisément en raison de la nature nocturne et cryptique de l'espèce. Les populations semblent stables dans les aires protégées mais en déclin ailleurs."
+            },
+            "tendance": "Décroissante",
+            "menaces": [
+                {
+                    "titre": "Déforestation et perte d'habitat forestier",
+                    "description": "La menace la plus critique provient de la destruction rapide des forêts tropicales pour l'agriculture commerciale (palmiers à huile, hévéas) et l'exploitation forestière. La fragmentation qui en résulte isole les populations et empêche les échanges génétiques. Entre 2000 et 2020, l'Asie du Sud-Est a perdu plus de 30 millions d'hectares de couvert forestier selon la FAO."
+                },
+                {
+                    "titre": "Expansion agricole et urbanisation",
+                    "description": "Les forêts de plaine, habitat privilégié, sont particulièrement vulnérables à la conversion en terres agricoles et à l'étalement urbain. Les infrastructures routières augmentent l'accès humain et la déforestation secondaire, tandis que la pollution lumineuse perturbe les comportements de chasse nocturne."
+                },
+                {
+                    "titre": "Utilisation de pesticides et déclin des populations d'insectes",
+                    "description": "L'emploi intensif de pesticides dans l'agriculture adjacente aux forêts contamine et réduit la disponibilité des proies. La bioaccumulation de ces toxines peut affecter la reproduction de l'engoulevent. Des études montrent un déclin dramatique de la biomasse d'insectes volants dans certaines régions tropicales, menaçant la base alimentaire de l'espèce."
+                },
+                {
+                    "titre": "Chasse locale et perturbations anthropiques",
+                    "description": "Bien que rare, l'espèce fait l'objet de captures opportunistes pour la médecine traditionnelle locale. Les œufs au sol sont vulnérables à la prédation par les animaux domestiques. Les activités humaines nocturnes (chasse, tourisme non réglementé) et les collisions routières constituent des menaces additionnelles."
+                }
+            ],
+            "mesures": [
+                "Expansion et gestion efficace des aires protégées, avec création de corridors écologiques pour connecter les fragments forestiers.",
+                "Programmes de restauration forestière avec des espèces indigènes et promotion de l'agroforesterie durable dans les zones tampons.",
+                "Réglementation stricte de l'utilisation des pesticides et promotion de méthodes de lutte biologique pour protéger les populations d'insectes.",
+                "Programmes de recherche et de monitoring acoustique pour suivre les tendances démographiques, couplés à une éducation environnementale des communautés locales."
+            ]
+        },
+        "anecdotes": [
+            {
+                "titre": "L'oiseau-dragon viral qui fascine le monde",
+                "description": "Surnommé le 'baby dragon bird', cet engoulevent est devenu une sensation virale sur Internet. Son apparence fantastique, avec ses touffes auriculaires en forme de cornes et ses grands yeux noirs, a conduit beaucoup à croire qu'il s'agissait d'une créature numérique. Des photos de sa posture dressée ont été partagées des millions de fois, certains affirmant que 'les dragons existent vraiment'. Cette popularité a positivement sensibilisé le public à la conservation des forêts tropicales asiatiques, aidant même à lever des fonds pour des projets de protection en Thaïlande et aux Philippines."
+            },
+            {
+                "titre": "Vision nocturne supérieure grâce au tapetum lucidum",
+                "description": "L'engoulevent oreillard possède une vision nocturne exceptionnelle grâce au tapetum lucidum, une couche réfléchissante derrière la rétine, similaire à celle des chats. Cette structure double la quantité de lumière disponible, lui permettant de chasser dans une obscurité quasi totale. Elle est à l'origine de la lueur rouge-orangé de ses yeux lorsqu'ils sont éclairés la nuit. Des études ont montré qu'il peut détecter et intercepter un papillon de nuit à plus de 15 mètres dans une obscurité équivalente à la lumière des étoiles sans lune, une capacité qui a alimenté les légendes locales sur ses pouvoirs surnaturels."
+            },
+            {
+                "titre": "Le mystère du vol silencieux résolu par l'ingénierie des plumes",
+                "description": "Le vol de cet oiseau est l'un des plus silencieux du monde animal. Le secret réside dans la microstructure de ses plumes de vol. Le bord d'attaque est dentelé, comme une scie, pour fragmenter le flux d'air et réduire les turbulences. Le bord de fuite est frangé et souple pour disperser le bruit, et la surface supérieure est recouverte d'un velours qui absorbe les vibrations. Cette triple ingénierie naturelle réduit le bruit du vol à un niveau inaudible pour ses proies et a inspiré des ingénieurs aérospatiaux pour concevoir des pales d'éoliennes et de ventilateurs plus silencieuses."
+            },
+            {
+                "titre": "Gardien nocturne et messager des ancêtres dans le folklore asiatique",
+                "description": "Dans le folklore d'Asie du Sud-Est, cet oiseau est souvent vu comme une créature spirituelle. En Thaïlande, il est considéré comme le gardien de la nuit, dont le chant marque la frontière entre le monde physique et celui des esprits. Aux Philippines, certains groupes ethniques le voient comme un messager des ancêtres. Contrairement à de nombreuses superstitions occidentales sur les oiseaux nocturnes, les traditions asiatiques lui attribuent généralement un rôle positif ou neutre, ce qui a pu contribuer à sa protection locale."
+            },
+            {
+                "titre": "Une bouche gigantesque pour une chasse efficace",
+                "description": "Malgré son petit bec, l'engoulevent cache une bouche qui peut s'ouvrir jusqu'à un angle de 120 degrés, la transformant en un véritable filet à insectes. Cette ouverture immense est bordée de soies rigides qui fonctionnent comme des capteurs pour guider les proies à l'intérieur. Il chasse en volant la bouche ouverte, une technique de 'chalutage' aérien qui lui permet de capturer des dizaines d'insectes en un seul passage. C'est cette caractéristique qui a inspiré son nom d''engoulevent', signifiant littéralement 'avale-vent'."
+            },
+            {
+                "titre": "Un camouflage si parfait que les chercheurs l'ignorent",
+                "description": "Le camouflage de l'engoulevent oreillard est si parfait que même les ornithologues expérimentés marchent souvent à moins d'un mètre de lui sans le voir. Son plumage imite à la perfection la litière de feuilles mortes, et ses motifs disruptifs brisent sa silhouette. Lorsqu'il est menacé, il reste absolument immobile, aplatissant ses touffes auriculaires et fermant à demi ses yeux pour se fondre dans le décor. Cette stratégie est si efficace que les jeunes au nid sont presque impossibles à localiser, même lorsque leur position est connue."
             }
         ]
     }
