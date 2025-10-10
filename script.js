@@ -132,10 +132,13 @@ const natureQuotes = [
           }
 };
         const categoryOrder = ['oiseaux', 'mammiferes', 'animaux-marins', 'insectes', 'amphibiens', 'reptiles'];
-        const iucnStatusMap = { 
+        const iucnStatusMap = {
+            'EX': { name: 'Éteint', color: '#000000', textColor: '#ffffff' },
+            'EW': { name: 'Éteint à l\'état sauvage', color: '#512da8', textColor: '#ffffff' },
             'CR': { name: 'En danger critique', color: '#d32f2f', textColor: '#ffffff' }, 
             'EN': { name: 'En danger', color: '#ef6c00', textColor: '#ffffff' }, 
             'VU': { name: 'Vulnérable', color: '#f9a825', textColor: '#000000' }, 
+            'NT': { name: 'Quasi menacée', color: '#fdd835', textColor: '#000000' }, // MODIFIÉ : Couleur jaune pour une meilleure distinction
             'LC': { name: 'Préoccupation mineure', color: '#4caf50', textColor: '#ffffff' }, 
             'DD': { name: 'Données insuffisantes', color: '#9e9e9e', textColor: '#ffffff' }, 
             'NE': { name: 'Non évalué', color: '#e0e0e0', textColor: '#000000' } 
